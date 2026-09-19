@@ -1,0 +1,146 @@
+.about-story {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(20rem, 0.85fr);
+  align-items: stretch;
+  gap: 0;
+}
+
+.about-story-media {
+  position: relative;
+  margin: 0;
+  min-height: 44rem;
+}
+
+.about-story-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about-story-copy {
+  display: flex;
+  padding: clamp(2.5rem, 6vw, 6rem);
+  color: var(--paper);
+  background: var(--brown);
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about-story-copy h1 {
+  font-size: clamp(3.5rem, 7vw, 7rem);
+}
+
+/* Grid suits the feature list because cards align in regular rows and columns. */
+.feature-list {
+  display: grid;
+  margin: 0;
+  padding: 0;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  list-style: none;
+  border-top: 1px solid var(--ink);
+}
+
+.feature-list li:first-child {
+  grid-column: span 2;
+}
+
+.feature-list li {
+  min-height: 10rem;
+  padding: 1.5rem;
+  border-right: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.feature-list li:nth-child(3n) {
+  border-right: 0;
+}
+
+.feature-list strong {
+  display: block;
+  margin-bottom: 0.45rem;
+  font-family: var(--display);
+  font-size: 1.7rem;
+  font-weight: 400;
+}
+
+.faq-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0 3rem;
+  border-top: 1px solid var(--ink);
+}
+
+/* Flex presents the three question steps in a row that can wrap. */
+.faq-steps {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.faq-steps > li {
+  flex: 1 1 14rem;
+}
+
+.faq-item {
+  padding: 1.75rem 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.faq-item h2 {
+  margin-bottom: 0.65rem;
+  font-size: clamp(1.55rem, 2.6vw, 2.4rem);
+}
+
+/* Specificity 0-0-2: .faq-item h2 loses this deliberate colour conflict. */
+.faq-item h2 {
+  color: var(--flame);
+}
+
+/* Specificity 0-0-3: this selector wins through an extra class, without !important. */
+.faq-grid .faq-item h2 {
+  color: var(--ink);
+}
+
+.feedback-panel {
+  display: grid;
+  grid-template-columns: minmax(18rem, 0.65fr) minmax(0, 1.35fr);
+  gap: clamp(2rem, 5vw, 5rem);
+}
+
+.feedback-panel-copy {
+  align-self: start;
+}
+
+/* This id is unique because the FAQ has one same-page target for its question form. */
+#question-form {
+  scroll-margin-top: 1rem;
+}
+
+/* The image floats inside its paragraph so the short explanation wraps beside it. */
+.story-float {
+  width: 9rem;
+  margin: 0 1rem 0.5rem 0;
+  float: left;
+}
+
+/* Without clear, the following content could continue beside the floated image. */
+.after-float {
+  clear: both;
+}
+
+.identity-details {
+  display: grid;
+  margin: 1.5rem 0;
+  grid-template-columns: max-content minmax(0, 1fr);
+  gap: 0.5rem 1rem;
+}
+
+.identity-details dt {
+  font-weight: 700;
+}
+
+.identity-details dd {
+  margin: 0;
+}

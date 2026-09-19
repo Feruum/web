@@ -1,0 +1,572 @@
+.home-hero {
+  position: relative;
+  min-height: clamp(46rem, 86dvh, 62rem);
+  overflow: hidden;
+  color: var(--paper);
+  background: var(--ink);
+}
+
+/* The child selector selects only the direct hero photograph, not later images. */
+.home-hero > img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 54%;
+}
+
+.home-hero::after {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(90deg, rgba(17, 17, 15, 0.92) 0%, rgba(17, 17, 15, 0.52) 48%, rgba(17, 17, 15, 0.12) 78%),
+    linear-gradient(0deg, rgba(17, 17, 15, 0.8) 0%, transparent 48%);
+  content: "";
+}
+
+.home-hero-content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  min-height: clamp(46rem, 86dvh, 62rem);
+  padding: clamp(4rem, 9vw, 8rem) 0 3rem;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.home-hero h1 {
+  max-width: 11ch;
+  margin-bottom: 1rem;
+  font-size: clamp(4.4rem, 10vw, 9.5rem);
+  text-transform: uppercase;
+}
+
+.home-hero .eyebrow {
+  color: var(--gold);
+}
+
+.hero-meta {
+  display: flex;
+  margin-top: 3rem;
+  padding-top: 1.2rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1rem 2rem;
+  border-top: 1px solid rgba(247, 243, 233, 0.55);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+/* Grid suits this block because the text and photograph must align in two dimensions. */
+.facts-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) minmax(20rem, 0.75fr);
+  align-items: center;
+  gap: clamp(2.5rem, 6vw, 6rem);
+}
+
+.facts-copy h2 {
+  max-width: 12ch;
+}
+
+.facts-photo {
+  position: relative;
+}
+
+.facts-photo::before {
+  position: absolute;
+  top: -1.5rem;
+  right: -1.5rem;
+  width: 45%;
+  height: 45%;
+  border-top: 0.5rem solid var(--gold);
+  border-right: 0.5rem solid var(--flame);
+  content: "";
+}
+
+.facts-photo img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.facts-grid {
+  display: grid;
+  margin-top: 3.5rem;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  border-top: 1px solid var(--ink);
+  border-bottom: 1px solid var(--ink);
+}
+
+.fact {
+  min-height: 10rem;
+  padding: 1.5rem;
+  border-right: 1px solid var(--line);
+}
+
+.fact:last-child {
+  border-right: 0;
+}
+
+.fact strong {
+  display: block;
+  margin-bottom: 0.55rem;
+  font-family: var(--display);
+  font-size: clamp(2rem, 4vw, 4rem);
+  font-weight: 400;
+  letter-spacing: -0.05em;
+  line-height: 1;
+}
+
+.fact span {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+
+.menu-preview {
+  display: grid;
+  grid-template-columns: minmax(0, 1.45fr) minmax(22rem, 0.75fr);
+  background: var(--brown);
+}
+
+.menu-preview-media {
+  min-height: 48rem;
+  overflow: hidden;
+}
+
+.menu-preview-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.menu-preview-copy {
+  display: flex;
+  padding: clamp(3rem, 6vw, 6rem);
+  color: var(--paper);
+  flex-direction: column;
+  justify-content: center;
+}
+
+.menu-preview-copy h2 {
+  max-width: 8ch;
+}
+
+.menu-preview-list {
+  margin: 1.5rem 0 0;
+  padding: 0;
+  list-style: none;
+  border-top: 1px solid rgba(247, 243, 233, 0.5);
+}
+
+.menu-preview-list li {
+  display: flex;
+  padding: 1rem 0;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(247, 243, 233, 0.35);
+  font-family: var(--display);
+  font-size: clamp(1.25rem, 2vw, 1.8rem);
+}
+
+.menu-preview-list li::after {
+  color: var(--gold);
+  content: "→";
+}
+
+.atmosphere-head {
+  display: flex;
+  margin-bottom: 3rem;
+  align-items: end;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.atmosphere-head h2 {
+  max-width: 10ch;
+  margin-bottom: 0;
+}
+
+.atmosphere-grid {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  grid-template-rows: repeat(2, minmax(18rem, 1fr));
+  gap: 1.5rem;
+}
+
+.atmosphere-grid figure {
+  position: relative;
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid rgba(247, 243, 233, 0.35);
+}
+
+.atmosphere-grid figure:first-child {
+  grid-column: 1 / span 7;
+  grid-row: 1 / -1;
+}
+
+.atmosphere-grid figure:nth-child(2),
+.atmosphere-grid figure:nth-child(3) {
+  grid-column: 8 / -1;
+}
+
+.atmosphere-grid img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 350ms ease;
+}
+
+.atmosphere-grid figure:hover img {
+  transform: scale(1.025);
+}
+
+.atmosphere-grid figcaption {
+  position: absolute;
+  right: 1rem;
+  bottom: 1rem;
+  padding: 0.45rem 0.7rem;
+  color: var(--paper);
+  background: rgba(17, 17, 15, 0.82);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.review-heading {
+  display: flex;
+  margin-bottom: 3rem;
+  align-items: end;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.review-heading h2 {
+  margin-bottom: 0;
+}
+
+.rating {
+  color: var(--ink);
+  font-weight: 700;
+}
+
+.rating-stars {
+  color: var(--gold);
+  letter-spacing: 0.12em;
+}
+
+.review-wall {
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) minmax(20rem, 0.75fr);
+  border-top: 1px solid var(--ink);
+  border-bottom: 1px solid var(--ink);
+}
+
+.review-wall blockquote {
+  margin: 0;
+}
+
+.review-featured {
+  padding: clamp(2rem, 5vw, 5rem);
+  border-right: 1px solid var(--line);
+}
+
+.review-featured p {
+  max-width: 12ch;
+  font-family: var(--display);
+  font-size: clamp(2.6rem, 5vw, 5.7rem);
+  letter-spacing: -0.05em;
+  line-height: 1.02;
+}
+
+.review-stack blockquote {
+  padding: clamp(2rem, 4vw, 3.5rem);
+}
+
+/* The adjacent selector adds a divider only between neighbouring reviews. */
+.review-stack blockquote + blockquote {
+  border-top: 1px solid var(--line);
+}
+
+.review-stack p {
+  font-family: var(--display);
+  font-size: clamp(1.8rem, 3vw, 3rem);
+  line-height: 1.08;
+}
+
+.review-wall cite {
+  font-style: normal;
+  font-weight: 700;
+}
+
+.visit-cta {
+  position: relative;
+  min-height: 44rem;
+  overflow: hidden;
+  color: var(--paper);
+  background: var(--ink);
+}
+
+.visit-cta > img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.visit-cta::after {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(17, 17, 15, 0.88), rgba(17, 17, 15, 0.25) 64%, rgba(17, 17, 15, 0.5));
+  content: "";
+}
+
+.visit-cta-inner {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  min-height: 44rem;
+  padding: 5rem 0;
+  grid-template-columns: minmax(0, 1fr) minmax(20rem, 28rem);
+  align-items: end;
+  gap: 3rem;
+}
+
+.visit-cta h2 {
+  max-width: 10ch;
+}
+
+.visit-card {
+  padding: 2rem;
+  color: var(--ink);
+  background: var(--paper);
+}
+
+.visit-card .detail-list {
+  margin-bottom: 1.5rem;
+}
+
+.menu-intro {
+  display: grid;
+  margin-bottom: 2.5rem;
+  grid-template-columns: minmax(0, 1fr) minmax(22rem, 0.72fr);
+  align-items: end;
+  gap: 4rem;
+}
+
+.menu-intro h2 {
+  max-width: 9ch;
+  margin-bottom: 0;
+}
+
+.menu-intro > p {
+  max-width: 38rem;
+  margin: 0 0 0.4rem;
+}
+
+.menu-board {
+  display: grid;
+  padding: clamp(2.5rem, 5vw, 5rem);
+  color: var(--paper);
+  background: var(--ink);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0 3rem;
+}
+
+.menu-group {
+  display: grid;
+  padding: 2rem 0;
+  grid-template-columns: 3rem minmax(0, 1fr);
+  border-top: 1px solid rgba(247, 243, 233, 0.35);
+}
+
+.menu-group:nth-of-type(5) {
+  grid-column: 1 / -1;
+}
+
+.menu-group-number {
+  margin: 0;
+  color: var(--gold);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+}
+
+.menu-group h3 {
+  margin-bottom: 0.75rem;
+  color: var(--gold);
+  font-family: var(--display);
+  font-size: clamp(2rem, 3vw, 3rem);
+  font-weight: 400;
+}
+
+/* Flex stacks every compact dish row while keeping its price label aligned. */
+.menu-board .dish-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  flex-direction: column;
+  list-style: none;
+}
+
+.dish-list li {
+  display: flex;
+  padding: 0.85rem 0;
+  align-items: end;
+  justify-content: space-between;
+  gap: 1.5rem;
+  border-bottom: 1px solid rgba(247, 243, 233, 0.18);
+}
+
+.dish-list strong {
+  display: block;
+  font-family: var(--display);
+  font-size: 1.35rem;
+  font-weight: 400;
+}
+
+/* Specificity 0-0-2: .dish-list strong loses the colour conflict below. */
+.dish-list strong {
+  color: var(--brown);
+}
+
+/* This selector wins because it has one extra class; no !important is needed. */
+.menu-page .dish-list strong {
+  color: var(--paper);
+}
+
+.dish-list small,
+.dish-list em {
+  display: block;
+  color: rgba(247, 243, 233, 0.68);
+  font-size: 0.74rem;
+}
+
+.dish-list small {
+  margin-top: 0.18rem;
+}
+
+.dish-list em {
+  flex: 0 0 auto;
+  font-style: normal;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.dish-list em::before {
+  content: "Ask today";
+}
+
+.menu-group:nth-of-type(5) .dish-list {
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.menu-group:nth-of-type(5) .dish-list li {
+  flex: 1 1 14rem;
+}
+
+.menu-feature {
+  display: grid;
+  margin-top: 2rem;
+  grid-column: 1 / -1;
+  grid-template-columns: minmax(18rem, 0.8fr) minmax(0, 1.2fr);
+  color: var(--ink);
+  background: var(--gold);
+}
+
+.menu-feature img {
+  width: 100%;
+  height: 100%;
+  min-height: 20rem;
+  object-fit: cover;
+}
+
+.menu-feature > div {
+  display: flex;
+  padding: 2.5rem;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.menu-feature .eyebrow {
+  color: var(--ink);
+}
+
+.menu-feature h3 {
+  max-width: 10ch;
+  margin-bottom: 1rem;
+  font-size: clamp(2.6rem, 5vw, 5rem);
+}
+
+.menu-feature p:last-child {
+  max-width: 34rem;
+  margin-bottom: 0;
+}
+
+.published-price {
+  display: block;
+  margin-bottom: 1rem;
+  font-family: var(--display);
+  font-size: 2.3rem;
+  font-weight: 400;
+}
+
+.menu-index {
+  margin-top: 3rem;
+}
+
+.menu-index table {
+  max-width: none;
+}
+
+.menu-index caption {
+  font-size: 1.35rem;
+}
+
+.menu-index th:first-child {
+  width: 30%;
+}
+
+.review-guide {
+  display: grid;
+  margin: 1.25rem 0;
+  grid-template-columns: max-content minmax(0, 1fr);
+  gap: 0.45rem 1rem;
+}
+
+.review-guide dt {
+  font-weight: 700;
+}
+
+.review-guide dd {
+  margin: 0;
+}
+
+.inline-figure {
+  margin: 1.5rem 0 0;
+}
+
+.inline-figure img {
+  width: 100%;
+  max-height: 18rem;
+  object-fit: cover;
+}
+
+.inline-figure figcaption {
+  padding-top: 0.5rem;
+  font-size: 0.78rem;
+}
+
+/* This id is unique because only the feedback page has this form section target. */
+#feedback-form {
+  scroll-margin-top: 1rem;
+}

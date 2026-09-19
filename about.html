@@ -1,81 +1,156 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Some facts about SF Shaurma Food, its food and the websites used for this project.">
-  <title>About SF — SF Class Project</title>
-</head>
-<body>
-  <header>
-    <p><a href="index.html">SF Shaurma Food</a></p>
-    <!-- These links use file names so we can open the other pages from the same folder. -->
-    <nav aria-label="Site pages">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="menu.html">Menu</a></li>
-        <li><a href="visit.html">Visit</a></li>
-        <li><a href="feedback.html">Feedback</a></li>
-        <li><a href="about.html" aria-current="page">About SF</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="faq.html">FAQ</a></li>
-        <li><a href="colophon.html">Colophon</a></li>
-      </ul>
-    </nav>
-  </header>
-  <!-- The main content is separate from the menu so it is easier to find on each page. -->
-  <main>
-    <h1>About SF Shaurma Food</h1>
-    <p><a href="#directions">Types of food</a> · <a href="#source">Our source</a></p>
-    <article aria-labelledby="directions">
-      <h2 id="directions">Look through the menu</h2>
-      <figure>
-        <img src="images/sf-front.jpg" width="320" height="240" alt="Shaurma Food sign, windows and steps outside the restaurant" loading="lazy">
-        <figcaption>SF sign and front. Our photo.</figcaption>
-      </figure>
-      <figure>
-        <img src="images/sf-entrance.jpg" width="320" height="240" alt="Front entrance of Shaurma Food with a green 24/7 sign" loading="lazy">
-        <figcaption>The entrance to SF. Our photo.</figcaption>
-      </figure>
-      <figure>
-        <img src="images/sf-outside.jpg" width="320" height="240" alt="Shaurma Food building with trees, steps and nearby apartment buildings" loading="lazy">
-        <figcaption>SF building and nearby trees. Our photo.</figcaption>
-      </figure>
-      <p>SF Shaurma Food has shawarma, burgers, soups, hot meals and drinks on its menu. This page gives a short introduction to the food. <strong>This is not the official SF website.</strong> <mark>Check your chosen SF location before you order.</mark></p>
-      <table>
-        <caption>Some dishes from the SF menu</caption>
-        <thead><tr><th scope="col">Category</th><th scope="col">Example item</th></tr></thead>
-        <tbody>
-          <tr><th scope="row">Shawarma</th><td>Chicken shawarma</td></tr>
-          <tr><th scope="row">Burgers</th><td>Chicken burger</td></tr>
-          <tr><th scope="row">Drinks</th><td>Turkish ayran</td></tr>
-        </tbody>
-      </table>
-      <ul>
-        <li>Look through the menu<ul><li>Choose a type of food.</li><li>Compare the dishes.</li></ul></li>
-        <li>Ask SF if you have questions.</li>
-      </ul>
-      <p>The <b>dish name</b> tells you what it is. The <em>description</em> tells you what is inside. Prices are in <abbr title="Kazakhstani tenge">KZT</abbr>. Visit <abbr title="Frequently asked questions">FAQ</abbr> for help.</p>
-      <dl><dt>Pickup</dt><dd>You collect your food from an SF location.</dd><dt>Delivery</dt><dd>Your food is brought to your address.</dd></dl>
-    </article>
-    <aside aria-labelledby="source">
-      <h2 id="source">Where the information comes from</h2>
-      <figure>
-        <blockquote cite="https://wolt.com/ru/kaz/nur-sultan/restaurant/sf-shaurma-food/items/menucategory-2"><p>Time to eat</p></blockquote>
-        <figcaption>This short slogan is on the <cite><a href="https://wolt.com/ru/kaz/nur-sultan/restaurant/sf-shaurma-food/items/menucategory-2" target="_blank" rel="noopener noreferrer">SF page on Wolt</a></cite><sup>1</sup>.</figcaption>
-      </figure>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="The story, food and atmosphere of Istanbul Restaurant in Astana." />
+    <meta name="author" content="Madi" />
+    <title>About — Istanbul Restaurant Astana</title>
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/madi.css" />
+  </head>
+  <body class="about-page">
+    <!-- Author: Madi. -->
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <header class="site-header">
+      <!-- This div aligns the brand and navigation because the row is visual, not a new content section. -->
+      <div class="site-shell header-inner">
+        <a class="brand" href="index.html" aria-label="Istanbul Restaurant home">
+          <img src="images/istanbul-logo.jpg" alt="Istanbul Turkish Taste logo" />
+        </a>
+        <nav class="site-nav" aria-label="Main navigation">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="visit.html">Visit</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="about.html" aria-current="page">About</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+            <li class="colophon-link"><a href="colophon.html">Colophon</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
-      <p><small><sup>1</sup> <i>Ayran</i> is a drink. <q>Pickup</q> means you collect the order yourself. We took the photos above ourselves. They show the sign, entrance and building from outside.</small></p>
-    </aside>
-  </main>
-  <footer>
-    <hr>
-    <p><strong>SF Shaurma Food</strong></p>
-    <p><a href="menu.html">Menu</a> &middot; <a href="gallery.html">Our photos</a> &middot; <a href="visit.html">Visit SF</a></p>
-    <address>
-      <a href="tel:+77777888888">+7&nbsp;(777)&nbsp;788-88-88</a><br>
-      <a href="https://shaurma-food.kz/" target="_blank" rel="noopener noreferrer">Official SF website</a>
-    </address>
-  </footer>
-</body>
+    <main id="main-content">
+      <!-- This section groups the restaurant story with the photograph that supports it. -->
+      <section class="about-story" aria-labelledby="about-title">
+        <div class="about-story-copy">
+          <p class="eyebrow">Istanbul → Astana</p>
+          <h1 id="about-title">A taste of Türkiye</h1>
+          <p class="lead">
+            Istanbul Restaurant brings Turkish cooking to Astana. Its profile introduces a chef
+            from Istanbul and changing Turkish specials.
+          </p>
+          <p><a href="#features-title">Visitor features</a> · <a href="#identity-title">Visual identity</a></p>
+        </div>
+        <figure class="about-story-media">
+          <img src="images/restaurant-dining-room.jpg" alt="Warmly lit dining room at Istanbul Restaurant" />
+          <figcaption class="media-caption">The dining room after sunset</figcaption>
+        </figure>
+      </section>
+
+      <section class="section" aria-labelledby="story-title">
+        <div class="site-shell content-grid">
+          <aside class="span-5">
+            <p class="eyebrow">The restaurant</p>
+            <h2 id="story-title">More than one familiar dish</h2>
+          </aside>
+          <div class="span-7">
+            <p class="lead">
+              Guests can find Turkish breakfast, döner, kebabs and künefe alongside café dishes.
+              Rotating specials keep the selection changing.
+            </p>
+            <p>
+              The Uly Dala location combines a dining room with a decorated terrace. The flame
+              logo, warm lights and red flowers form a clear identity that continues from the
+              street into the interior.
+            </p>
+            <p>
+              <a
+                class="text-link"
+                href="https://www.instagram.com/istanbul.turkishtaste/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Open Instagram →</a
+              >
+            </p>
+            <div class="table-wrap">
+              <table>
+                <caption>Public restaurant facts</caption>
+                <thead>
+                  <tr><th scope="col">Fact</th><th scope="col">Published detail</th></tr>
+                </thead>
+                <tbody>
+                  <tr><th scope="row">Address</th><td>Uly Dala Avenue 56</td></tr>
+                  <tr><th scope="row">Hours</th><td>Daily, 08:00–02:00</td></tr>
+                  <tr><th scope="row">Rating</th><td>4.7 from 1,811 ratings<sup>1</sup></td></tr>
+                  <tr><th scope="row">Capacity</th><td>Up to 60 guests</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p><small><sup>1</sup> Rating recorded during project research.</small></p>
+            <p>
+              <img class="story-float" src="images/restaurant-sign-detail.jpg" alt="Red and yellow flame symbol" />
+              The flame symbol repeats on the façade and inside the terrace, helping visitors
+              recognise the entrance after dark.
+            </p>
+            <hr class="after-float" />
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-dark" aria-labelledby="features-title">
+        <div class="site-shell">
+          <p class="eyebrow">What visitors can expect</p>
+          <h2 id="features-title">Food, terrace and time together</h2>
+          <ul class="feature-list">
+            <li><strong>Turkish breakfast</strong>A generous morning option for sharing.</li>
+            <li><strong>Grill dishes</strong>Döner, Adana kebab and other grilled food.</li>
+            <li><strong>Turkish sweets</strong>Künefe and changing dessert specials.</li>
+            <li><strong>Family friendly</strong>A children’s menu and children’s corner.</li>
+            <li><strong>Summer terrace</strong>Outdoor tables framed by flowers and lights.</li>
+            <li><strong>Group occasions</strong>Booking, banquets and space for up to 60 guests.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="identity-title">
+        <div class="site-shell content-grid">
+          <div class="span-7">
+            <img src="images/restaurant-sign-detail.jpg" alt="Istanbul Restaurant flame sign beside red flowers" />
+          </div>
+          <div class="span-5">
+            <p class="eyebrow">The visual identity</p>
+            <h2 id="identity-title">Flame, gold and red</h2>
+            <p>
+              The restaurant mark <em>combines</em> a flame with a serving dish. This website
+              follows the same <b>black</b>, <i>warm yellow</i>, <mark>red</mark> and white palette.
+            </p>
+            <dl class="identity-details">
+              <dt>Flame</dt><dd>The restaurant symbol.</dd>
+              <dt>Flowers</dt><dd>Terrace decoration.</dd>
+            </dl>
+            <p class="button-row"><a class="button" href="gallery.html">See the gallery</a></p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="site-shell footer-inner">
+        <div class="footer-brand">
+          <img src="images/istanbul-logo.jpg" alt="" />
+          <small>Istanbul · Uly Dala 56<br /><a href="tel:+77021006288">+7 702 100 62 88</a><br />&copy; 2026 Sanzhar, Jasulan and Madi</small>
+        </div>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="visit.html">Visit</a></li>
+          <li class="colophon-link"><a href="colophon.html">Colophon</a></li>
+        </ul>
+      </div>
+    </footer>
+  </body>
 </html>

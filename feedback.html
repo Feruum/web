@@ -1,83 +1,175 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="A practice feedback form about an SF visit. Your message is not sent.">
-  <title>Feedback — SF Class Project</title>
-</head>
-<body>
-  <header>
-    <p><a href="index.html">SF Shaurma Food</a></p>
-    <!-- These links use file names so we can open the other pages from the same folder. -->
-    <nav aria-label="Site pages">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="menu.html">Menu</a></li>
-        <li><a href="visit.html">Visit</a></li>
-        <li><a href="feedback.html" aria-current="page">Feedback</a></li>
-        <li><a href="about.html">About SF</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="faq.html">FAQ</a></li>
-        <li><a href="colophon.html">Colophon</a></li>
-      </ul>
-    </nav>
-  </header>
-  <!-- The main content is separate from the menu so it is easier to find on each page. -->
-  <main>
-    <h1>Your Feedback</h1>
-    <section aria-labelledby="feedback-guide">
-      <h2 id="feedback-guide">Tell us about your visit</h2>
-      <p>A helpful review says when you visited and what you ordered. Add the city and say if you ate at SF, picked up your food or used delivery. Write what you liked and what could be better.</p>
-      <p>If you have a problem with a real order, contact SF. This page is for class practice. Your review will not appear online, and SF will not receive it.</p>
-      <ol start="1">
-        <li>Write when you visited.</li>
-        <li>Tell us about the food or service.</li>
-        <li>Read your message before pressing the button.</li>
-      </ol>
-      <p>The browser checks that the required fields are filled in and that the email has the right format. Reset clears what you entered. Your details and message are not saved. To discuss feedback by email, <a href="mailto:?subject=Discussing%20SF%20feedback">open an email</a> and choose who to send it to.</p>
-    </section>
-    <section aria-labelledby="feedback-form-heading">
-      <h2 id="feedback-form-heading">Feedback form</h2>
-      <form method="get" action="feedback.html#form-result">
-        <!-- This form has no server. Personal fields have no name attribute so their values stay out of the page address. Only the order type goes into the address. -->
-        <fieldset>
-          <legend>Visit details</legend>
-          <p><label for="feedback-name">Name</label><br><input type="text" id="feedback-name" autocomplete="name" required placeholder="Your name"></p>
-          <p><label for="feedback-email">Email</label><br><input type="email" id="feedback-email" autocomplete="email" required placeholder="name@example.org"></p>
-          <p><label for="feedback-tel">Phone</label><br><input type="tel" id="feedback-tel" autocomplete="tel" required placeholder="+7 …"></p>
-          <p><label for="feedback-number">Number of guests</label><br><input type="number" id="feedback-number" min="1" max="30" step="1" required placeholder="1"></p>
-          <p><label for="feedback-date">Visit date</label><br><input type="date" id="feedback-date" required></p>
-          <p><label for="feedback-city">City</label><br><select id="feedback-city" required>
-            <option value="" selected disabled>Choose a city</option>
-            <option value="astana">Astana</option><option value="kosshy">Kosshy</option>
-            <option value="kokshetau">Kokshetau</option><option value="karaganda">Karaganda</option>
-          </select></p>
-        </fieldset>
-        <fieldset>
-          <legend>Order type</legend>
-          <p><input type="radio" id="feedback-dine" name="format" value="dine-in" required><label for="feedback-dine">Dine-in</label></p>
-          <p><input type="radio" id="feedback-pickup" name="format" value="pickup"><label for="feedback-pickup">Pickup</label></p>
-          <p><input type="radio" id="feedback-delivery" name="format" value="delivery"><label for="feedback-delivery">Delivery</label></p>
-        </fieldset>
-        <fieldset>
-          <legend>Message</legend>
-          <p><label for="feedback-message">Your feedback</label><br><textarea id="feedback-message" rows="4" cols="40" required placeholder="Write about your visit or ask a question"></textarea></p>
-          <p><input type="checkbox" id="feedback-check" required><label for="feedback-check">I know this form does not send anything</label></p>
-        </fieldset>
-        <p><button type="submit">Check feedback</button> <button type="reset">Reset</button></p>
-      </form>
-    </section>
-    <p id="form-result"><strong>Practice form:</strong> your review is not posted or sent to SF. The form just lets you practise filling in fields.</p>
-  </main>
-  <footer>
-    <hr>
-    <p><strong>SF Shaurma Food</strong></p>
-    <p><a href="menu.html">Menu</a> &middot; <a href="gallery.html">Our photos</a> &middot; <a href="visit.html">Visit SF</a></p>
-    <address>
-      <a href="tel:+77777888888">+7&nbsp;(777)&nbsp;788-88-88</a><br>
-      <a href="https://shaurma-food.kz/" target="_blank" rel="noopener noreferrer">Official SF website</a>
-    </address>
-  </footer>
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="A classroom feedback form about a visit to Istanbul Restaurant in Astana."
+    />
+    <meta name="author" content="Sanzhar" />
+    <title>Feedback — Istanbul Restaurant Astana</title>
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/sanzhar.css" />
+  </head>
+  <body class="feedback-page">
+    <!-- Author: Sanzhar. -->
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <header class="site-header">
+      <!-- This div aligns the logo and navigation because the row has no independent meaning. -->
+      <div class="site-shell header-inner">
+        <a class="brand" href="index.html" aria-label="Istanbul Restaurant home">
+          <img src="images/istanbul-logo.jpg" alt="Istanbul Turkish Taste logo" />
+        </a>
+        <nav class="site-nav" aria-label="Main navigation">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="visit.html">Visit</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="feedback.html" aria-current="page">Feedback</a></li>
+            <li class="colophon-link"><a href="colophon.html">Colophon</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <!-- This section introduces feedback as a separate topic from the FAQ page. -->
+      <section class="page-hero" aria-labelledby="feedback-title">
+        <div class="page-hero-copy">
+          <p class="eyebrow">After your visit</p>
+          <h1 id="feedback-title">Share your experience</h1>
+          <p class="lead">
+            Clear feedback can describe the food, service and atmosphere without making a general
+            claim from one visit.
+          </p>
+          <p class="button-row"><a class="button" href="#feedback-form">Open the form</a></p>
+        </div>
+        <figure class="page-hero-media">
+          <img
+            src="images/restaurant-terrace-arch.jpg"
+            alt="Red flower arch at the entrance to Istanbul Restaurant"
+          />
+          <figcaption class="media-caption">The evening terrace entrance</figcaption>
+        </figure>
+      </section>
+
+      <section class="section" id="feedback-form" aria-labelledby="form-title">
+        <div class="site-shell content-grid">
+          <article class="span-5">
+            <p class="eyebrow">Practice form</p>
+            <h2 id="form-title">Write a useful review</h2>
+            <p>
+              Mention the date, one dish and one detail about the service. Be specific and polite.
+              A short description such as <q>The breakfast arrived warm and the staff explained the dishes</q>
+              is more helpful than a single word.
+            </p>
+            <aside class="note-panel">
+              <strong>Important:</strong> this page is a classroom demonstration<sup>1</sup>. For public
+              feedback, use the restaurant’s official listing.
+            </aside>
+            <p>
+              <em>Useful feedback</em> separates <b>what happened</b> from <i>how it felt</i> and
+              discusses food and service as two different parts of the visit.
+            </p>
+            <hr />
+            <dl class="review-guide">
+              <dt>Food</dt><dd>Name the dish and one detail.</dd>
+              <dt>Service</dt><dd>Describe one clear moment.</dd>
+            </dl>
+            <p>
+              Check the <abbr title="Frequently Asked Questions">FAQ</abbr>, send a
+              <abbr title="Direct message">DM</abbr> through
+              <a href="https://www.instagram.com/istanbul.turkishtaste/" target="_blank" rel="noopener noreferrer">Instagram</a>,
+              or <a href="mailto:?subject=Istanbul%20Restaurant%20feedback">email your notes</a>.
+            </p>
+            <figure class="inline-figure">
+              <img src="images/restaurant-interior-table.jpg" alt="Prepared table inside Istanbul Restaurant" />
+              <figcaption>A prepared table inside the dining room</figcaption>
+            </figure>
+          </article>
+
+          <form class="form-card span-7" method="get" action="feedback.html#feedback-result">
+            <!-- This classroom form has no server, so it validates fields but sends and stores nothing. -->
+            <fieldset>
+              <legend>Visit details</legend>
+              <div class="form-grid">
+                <div class="form-field">
+                  <label for="review-name">Name</label>
+                  <input id="review-name" name="name" type="text" placeholder="Your name" required />
+                </div>
+                <div class="form-field">
+                  <label for="review-email">Email</label>
+                  <input id="review-email" name="email" type="email" placeholder="name@example.com" required />
+                </div>
+                <div class="form-field">
+                  <label for="review-phone">Phone</label>
+                  <input id="review-phone" name="phone" type="tel" placeholder="+7 700 000 00 00" required />
+                </div>
+                <div class="form-field">
+                  <label for="review-guests">Guests</label>
+                  <input id="review-guests" name="guests" type="number" min="1" max="60" placeholder="2" required />
+                </div>
+                <div class="form-field">
+                  <label for="review-date">Visit date</label>
+                  <input id="review-date" name="date" type="date" required />
+                </div>
+                <div class="form-field">
+                  <label for="review-topic">Main topic</label>
+                  <select id="review-topic" name="topic" required>
+                    <option value="">Choose a topic</option>
+                    <option>Food</option>
+                    <option>Service</option>
+                    <option>Atmosphere</option>
+                  </select>
+                </div>
+                <fieldset class="form-field form-field-full">
+                  <legend>Would you return?</legend>
+                  <div class="choice-row">
+                    <input id="review-return-yes" type="radio" name="return" value="yes" required />
+                    <label for="review-return-yes">Yes</label>
+                    <input id="review-return-no" type="radio" name="return" value="no" />
+                    <label for="review-return-no">No</label>
+                  </div>
+                </fieldset>
+                <div class="form-field form-field-full">
+                  <label for="review-message">Feedback</label>
+                  <textarea id="review-message" name="message" placeholder="Describe one specific experience" required></textarea>
+                </div>
+                <label class="check-label form-field-full" for="review-confirm">
+                  <input id="review-confirm" type="checkbox" required /> I understand that this form sends nothing
+                </label>
+              </div>
+            </fieldset>
+            <p class="button-row">
+              <button class="button" type="submit">Check feedback</button>
+              <button class="button button-outline" type="reset">Reset</button>
+            </p>
+            <p class="form-result" id="feedback-result">
+              The example is complete, but no feedback was submitted.
+            </p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="site-shell footer-inner">
+        <div class="footer-brand">
+          <img src="images/istanbul-logo.jpg" alt="" />
+          <small>Istanbul · Uly Dala 56<br /><a href="tel:+77021006288">+7 702 100 62 88</a><br />&copy; 2026 Sanzhar, Jasulan and Madi</small>
+        </div>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li class="colophon-link"><a href="colophon.html">Colophon</a></li>
+        </ul>
+      </div>
+    </footer>
+  </body>
 </html>

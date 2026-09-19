@@ -1,64 +1,166 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="How the eight HTML pages, links, photos and practice forms work.">
-  <title>Colophon — SF Class Project</title>
-</head>
-<body>
-  <header>
-    <p><a href="index.html">SF Shaurma Food</a></p>
-    <!-- These links use file names so we can open the other pages from the same folder. -->
-    <nav aria-label="Site pages">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="menu.html">Menu</a></li>
-        <li><a href="visit.html">Visit</a></li>
-        <li><a href="feedback.html">Feedback</a></li>
-        <li><a href="about.html">About SF</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="faq.html">FAQ</a></li>
-        <li><a href="colophon.html" aria-current="page">Colophon</a></li>
-      </ul>
-    </nav>
-  </header>
-  <!-- The main content is separate from the menu so it is easier to find on each page. -->
-  <main>
-    <h1>How the Site Works</h1>
-    <section aria-labelledby="structure">
-      <h2 id="structure">Eight HTML pages</h2>
-      <p>This project has eight HTML pages. The same menu is at the top of every page, so you can move between them. Each page has its own title and text. <strong>The site uses only HTML.</strong></p>
-      <p>The browser reads the HTML tags and shows the page. Headings divide the text into parts. Tables put information in rows and columns. To start, open <code>index.html</code>.</p>
-      <figure>
-        <pre><code>&lt;main&gt;
-  &lt;section aria-labelledby="menu-title"&gt;
-    &lt;h2 id="menu-title"&gt;Menu&lt;/h2&gt;
-  &lt;/section&gt;
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Team roles and technical notes for the Istanbul Restaurant student website." />
+    <meta name="author" content="Sanzhar, Jasulan and Madi" />
+    <title>Colophon — Istanbul Restaurant Project</title>
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/jasulan.css" />
+    <!-- This single internal rule demonstrates that a later author rule can override an external rule. -->
+    <style>
+      .cascade-demo { letter-spacing: 0.28em; }
+    </style>
+  </head>
+  <body class="colophon-page">
+    <!-- Authors: Sanzhar, Jasulan and Madi. The colophon is shared team work. -->
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <header class="site-header">
+      <!-- This div creates one layout row for the brand and navigation without replacing a semantic element. -->
+      <div class="site-shell header-inner">
+        <a class="brand" href="index.html" aria-label="Istanbul Restaurant home">
+          <img src="images/istanbul-logo.jpg" alt="Istanbul Turkish Taste logo" />
+        </a>
+        <nav class="site-nav" aria-label="Main navigation">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="visit.html">Visit</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+            <li class="colophon-link"><a href="colophon.html" aria-current="page">Colophon</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <!-- This section introduces the technical notes with one clear heading. -->
+      <section class="page-hero" aria-labelledby="colophon-title">
+        <div class="page-hero-copy">
+          <p class="eyebrow cascade-demo">Project notes</p>
+          <h1 id="colophon-title">How the site was made</h1>
+          <p class="lead">
+            An eight-page student website built by a three-person team with plain HTML and CSS.
+          </p>
+        </div>
+        <div class="page-hero-media">
+          <img src="images/restaurant-exterior-wide.jpg" alt="Istanbul Restaurant exterior at night" />
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="team-title">
+        <div class="site-shell colophon-grid">
+          <div>
+            <p class="eyebrow">Three people</p>
+            <h2 id="team-title">Team responsibilities</h2>
+            <p>
+              Everyone can explain the shared header, navigation, colours and responsive layout.
+              Each member also has two main content pages to present.
+            </p>
+          </div>
+          <ol class="team-list">
+            <li><strong>Sanzhar — Menu and Feedback</strong><br />Menu table, ordering notes and review form.</li>
+            <li><strong>Jasulan — Visit and Gallery</strong><br />Contact details, map and photo grid.</li>
+            <li><strong>Madi — About and FAQ</strong><br />Restaurant story, questions and contact form.</li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="section section-dark" aria-labelledby="structure-title">
+        <div class="site-shell content-grid">
+          <div class="span-5">
+            <p class="eyebrow">Simple structure</p>
+            <h2 id="structure-title">Built for clear explanation</h2>
+            <p class="lead">
+              No framework and no JavaScript. The project uses semantic elements, relative links
+              and a small set of reusable CSS classes.
+            </p>
+          </div>
+          <div class="span-7 note-panel">
+            <ul class="detail-list">
+              <!-- A span styles the short label inside each list item without creating a new section. -->
+              <li><span>Pages</span><strong>8 HTML files</strong></li>
+              <li><span>Shared design</span><strong>css/base.css</strong></li>
+              <li><span>Page styles</span><strong>3 named CSS files</strong></li>
+              <li><span>Forms</span><strong>3 practice forms</strong></li>
+              <li><span>Images</span><strong>Local JPG files</strong></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="code-title">
+        <div class="site-shell colophon-grid">
+          <div>
+            <p class="eyebrow">HTML and CSS</p>
+            <h2 id="code-title">What the main pieces do</h2>
+          </div>
+          <div>
+            <h3>Semantic HTML</h3>
+            <p>
+              <code>header</code>, <code>nav</code>, <code>main</code>,
+              <code>section</code> and <code>footer</code> describe the page structure.
+            </p>
+            <h3>Reusable classes</h3>
+            <p>
+              Classes such as <code>site-shell</code>, <code>page-hero</code>,
+              <code>content-grid</code> and <code>button</code> keep the pages consistent.
+            </p>
+            <h3>Responsive layout</h3>
+            <p>
+              CSS media queries change two-column areas into one column on small screens. Images
+              use <code>object-fit: cover</code> so they fill their frames.
+            </p>
+            <p>
+              Press <kbd>Ctrl</kbd> + <kbd>U</kbd> to read the source. A successful checker can
+              report <samp>Document checking completed</samp>.
+            </p>
+            <pre><code>&lt;main id="main-content"&gt;
+  &lt;section&gt;...&lt;/section&gt;
 &lt;/main&gt;</code></pre>
-        <figcaption>This example shows a main area with a section and a heading.</figcaption>
-      </figure>
-      <p>Press <kbd>Tab</kbd> to move between links and fields. If you leave a required field empty, you may see <samp>Please fill out this field.</samp> The message depends on the language of your browser.</p>
-    </section>
-    <section aria-labelledby="forms">
-      <h2 id="forms">How the forms work</h2>
-      <p>The three forms use GET and open the same page again. Personal fields have no name attribute, so those values stay out of the page address. Only the order type goes into the address. <em>Nothing is booked or sent to SF.</em></p>
-      <!-- This div keeps two short links together. They are not a separate topic, so a section is not needed. -->
-      <div><a href="index.html">Home</a> · <a href="faq.html">FAQ</a></div>
-      <!-- This span marks the version inside a sentence. It does not need a heading or a separate section. -->
-      <p>Version: <span>HTML</span>. The photos are in the images folder, so they open without the internet. The captions describe the photos taken by our team.</p>
-      <hr>
-      <p>HTML entities let us show symbols such as &amp; and &copy;.</p>
-    </section>
-  </main>
-  <footer>
-    <hr>
-    <p><strong>SF Shaurma Food</strong></p>
-    <p><a href="menu.html">Menu</a> &middot; <a href="gallery.html">Our photos</a> &middot; <a href="visit.html">Visit SF</a></p>
-    <address>
-      <a href="tel:+77777888888">+7&nbsp;(777)&nbsp;788-88-88</a><br>
-      <a href="https://shaurma-food.kz/" target="_blank" rel="noopener noreferrer">Official SF website</a>
-    </address>
-  </footer>
-</body>
+            <hr />
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-brown" aria-labelledby="content-title">
+        <div class="site-shell content-grid">
+          <div class="span-5">
+            <p class="eyebrow">Content check</p>
+            <h2 id="content-title">Restaurant details</h2>
+          </div>
+          <div class="span-7">
+            <p>
+              Address, hours, phone, services and rating were checked against the restaurant’s
+              public 2GIS listing. Menu highlights and the brand identity were checked against its
+              public Instagram profile.
+            </p>
+            <p class="button-row">
+              <a class="button" href="https://2gis.kz/astana/firm/70000001069922617" target="_blank" rel="noopener noreferrer">Open 2GIS</a>
+              <a class="button button-outline" href="https://www.instagram.com/istanbul.turkishtaste/" target="_blank" rel="noopener noreferrer">Open Instagram</a>
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="site-shell footer-inner">
+        <div class="footer-brand">
+          <img src="images/istanbul-logo.jpg" alt="" />
+          <small>Istanbul · Uly Dala 56<br /><a href="tel:+77021006288">+7 702 100 62 88</a><br />&copy; 2026 Sanzhar, Jasulan and Madi</small>
+        </div>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="visit.html">Visit</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+      </div>
+    </footer>
+  </body>
 </html>

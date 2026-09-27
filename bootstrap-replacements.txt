@@ -1,0 +1,16 @@
+Assignment 2 CSS replaced by Bootstrap 5.3.8
+
+Old .site-shell width and auto margins -> .container; the home hero uses .container-fluid.
+Old .content-grid and .span-* columns -> .row, .col-12, .col-md-6, .col-lg-*.
+Old .facts-grid and .fact layout -> .row.g-3 with responsive columns.
+Old .menu-board, .gallery-grid and .faq-grid -> Bootstrap rows and responsive columns.
+Old .form-grid and .form-field sizing -> .row.g-3, .col-12 and .col-md-6.
+Old .header-inner and .site-nav flex navigation -> .navbar, .navbar-expand-lg, .navbar-toggler and .collapse.navbar-collapse.
+Old .footer-inner and .footer-links layout -> Bootstrap row, columns and flex utilities.
+Old .button and .button-outline styling -> .btn and Bootstrap button variants and sizes.
+Old section padding, spacing and alignment -> py-5, p-4, gap-*, mt-*, align-items-* and text-* utilities.
+Old table and form-control styling -> .table, .table-responsive, .form-control, .form-select and .form-check-input.
+Old hand-sized image frames -> .img-fluid, .ratio and .object-fit-cover.
+
+The remaining css/base.css handles the restaurant palette and fonts, logo sizes, image crop limits,
+the keyboard skip link and the local form result target. No page-specific stylesheet remains.

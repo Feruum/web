@@ -1,175 +1,160 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-      name="description"
-      content="A classroom feedback form about a visit to Istanbul Restaurant in Astana."
-    />
-    <meta name="author" content="Sanzhar" />
-    <title>Feedback — Istanbul Restaurant Astana</title>
-    <link rel="stylesheet" href="css/base.css" />
-    <link rel="stylesheet" href="css/sanzhar.css" />
-  </head>
-  <body class="feedback-page">
-    <!-- Author: Sanzhar. -->
-    <a class="skip-link" href="#main-content">Skip to content</a>
-
-    <header class="site-header">
-      <!-- This div aligns the logo and navigation because the row has no independent meaning. -->
-      <div class="site-shell header-inner">
-        <a class="brand" href="index.html" aria-label="Istanbul Restaurant home">
-          <img src="images/istanbul-logo.jpg" alt="Istanbul Turkish Taste logo" />
-        </a>
-        <nav class="site-nav" aria-label="Main navigation">
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="menu.html">Menu</a></li>
-            <li><a href="visit.html">Visit</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="faq.html">FAQ</a></li>
-            <li><a href="feedback.html" aria-current="page">Feedback</a></li>
-            <li class="colophon-link"><a href="colophon.html">Colophon</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-
-    <main id="main-content">
-      <!-- This section introduces feedback as a separate topic from the FAQ page. -->
-      <section class="page-hero" aria-labelledby="feedback-title">
-        <div class="page-hero-copy">
-          <p class="eyebrow">After your visit</p>
-          <h1 id="feedback-title">Share your experience</h1>
-          <p class="lead">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="A classroom feedback form about a visit to Istanbul Restaurant in Astana." name="description"/>
+<meta content="Sanzhar" name="author"/>
+<title>Feedback — Istanbul Restaurant Astana</title><!-- Bootstrap 5.3.8 via CDN; local correction layer follows. --><link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" rel="stylesheet"/>
+<link href="css/base.css" rel="stylesheet"/>
+</head>
+<body class="feedback-page">
+<!-- Author: Sanzhar. -->
+<a class="skip-link" href="#main-content">Skip to content</a>
+<header class="site-header bg-body border-bottom">
+<div class="container">
+<nav aria-label="Main navigation" class="navbar navbar-expand-lg w-100" data-bs-theme="light"><a aria-label="Istanbul Restaurant home" class="navbar-brand me-auto" href="index.html">
+<img alt="Istanbul Turkish Taste logo" class="brand-logo" src="images/istanbul-logo.jpg"/>
+</a><button aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#mainNavbar" data-bs-toggle="collapse" type="button"><span class="navbar-toggler-icon"></span></button>
+<div class="collapse navbar-collapse justify-content-lg-end" id="mainNavbar"><ul class="navbar-nav gap-lg-2 mb-2 mb-lg-0">
+<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+<li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+<li class="nav-item"><a class="nav-link" href="visit.html">Visit</a></li>
+<li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+<li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+<li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+<li class="nav-item"><a aria-current="page" class="nav-link active" href="feedback.html">Feedback</a></li>
+<li class="nav-item d-none"><a class="nav-link" href="colophon.html">Colophon</a></li>
+</ul></div>
+</nav>
+</div>
+</header>
+<main id="main-content">
+<!-- This section introduces feedback as a separate topic from the FAQ page. -->
+<section aria-labelledby="feedback-title" class="container-fluid px-0 border-bottom">
+<div class="row g-0 align-items-stretch"><div class="page-hero-copy col-12 col-lg-6 d-flex flex-column justify-content-center p-4 p-md-5">
+<p class="small fw-bold text-uppercase text-brand-accent mb-3">After your visit</p>
+<h1 class="display-2 mb-4" id="feedback-title">Share your experience</h1>
+<p class="lead">
             Clear feedback can describe the food, service and atmosphere without making a general
             claim from one visit.
           </p>
-          <p class="button-row"><a class="button" href="#feedback-form">Open the form</a></p>
-        </div>
-        <figure class="page-hero-media">
-          <img
-            src="images/restaurant-terrace-arch.jpg"
-            alt="Red flower arch at the entrance to Istanbul Restaurant"
-          />
-          <figcaption class="media-caption">The evening terrace entrance</figcaption>
-        </figure>
-      </section>
-
-      <section class="section" id="feedback-form" aria-labelledby="form-title">
-        <div class="site-shell content-grid">
-          <article class="span-5">
-            <p class="eyebrow">Practice form</p>
-            <h2 id="form-title">Write a useful review</h2>
-            <p>
+<p class="d-flex flex-wrap align-items-center gap-2 mt-4"><a class="btn btn-warning" href="#feedback-form">Open the form</a></p>
+</div><figure class="page-hero-media col-12 col-lg-6 m-0">
+<img alt="Red flower arch at the entrance to Istanbul Restaurant" class="img-fluid w-100 h-100 object-fit-cover" src="images/restaurant-terrace-arch.jpg"/>
+<figcaption class="small text-body-secondary d-block p-2">The evening terrace entrance</figcaption>
+</figure></div></section>
+<section aria-labelledby="form-title" class="py-5" id="feedback-form">
+<div class="container"><div class="row g-4 align-items-start">
+<article class="col-12 col-lg-5">
+<p class="small fw-bold text-uppercase text-brand-accent mb-3">Practice form</p>
+<h2 class="display-5 mb-4" id="form-title">Write a useful review</h2>
+<p>
               Mention the date, one dish and one detail about the service. Be specific and polite.
               A short description such as <q>The breakfast arrived warm and the staff explained the dishes</q>
               is more helpful than a single word.
             </p>
-            <aside class="note-panel">
-              <strong>Important:</strong> this page is a classroom demonstration<sup>1</sup>. For public
+<aside class="bg-body text-dark p-4 border-start border-warning border-4 shadow-sm">
+<strong>Important:</strong> this page is a classroom demonstration<sup>1</sup>. For public
               feedback, use the restaurant’s official listing.
             </aside>
-            <p>
-              <em>Useful feedback</em> separates <b>what happened</b> from <i>how it felt</i> and
+<p>
+<em>Useful feedback</em> separates <b>what happened</b> from <i>how it felt</i> and
               discusses food and service as two different parts of the visit.
             </p>
-            <hr />
-            <dl class="review-guide">
-              <dt>Food</dt><dd>Name the dish and one detail.</dd>
-              <dt>Service</dt><dd>Describe one clear moment.</dd>
-            </dl>
-            <p>
+<hr/>
+<dl class="review-guide">
+<dt>Food</dt><dd>Name the dish and one detail.</dd>
+<dt>Service</dt><dd>Describe one clear moment.</dd>
+</dl>
+<p>
               Check the <abbr title="Frequently Asked Questions">FAQ</abbr>, send a
               <abbr title="Direct message">DM</abbr> through
-              <a href="https://www.instagram.com/istanbul.turkishtaste/" target="_blank" rel="noopener noreferrer">Instagram</a>,
+              <a href="https://www.instagram.com/istanbul.turkishtaste/" rel="noopener noreferrer" target="_blank">Instagram</a>,
               or <a href="mailto:?subject=Istanbul%20Restaurant%20feedback">email your notes</a>.
             </p>
-            <figure class="inline-figure">
-              <img src="images/restaurant-interior-table.jpg" alt="Prepared table inside Istanbul Restaurant" />
-              <figcaption>A prepared table inside the dining room</figcaption>
-            </figure>
-          </article>
-
-          <form class="form-card span-7" method="get" action="feedback.html#feedback-result">
-            <!-- This classroom form has no server, so it validates fields but sends and stores nothing. -->
-            <fieldset>
-              <legend>Visit details</legend>
-              <div class="form-grid">
-                <div class="form-field">
-                  <label for="review-name">Name</label>
-                  <input id="review-name" name="name" type="text" placeholder="Your name" required />
-                </div>
-                <div class="form-field">
-                  <label for="review-email">Email</label>
-                  <input id="review-email" name="email" type="email" placeholder="name@example.com" required />
-                </div>
-                <div class="form-field">
-                  <label for="review-phone">Phone</label>
-                  <input id="review-phone" name="phone" type="tel" placeholder="+7 700 000 00 00" required />
-                </div>
-                <div class="form-field">
-                  <label for="review-guests">Guests</label>
-                  <input id="review-guests" name="guests" type="number" min="1" max="60" placeholder="2" required />
-                </div>
-                <div class="form-field">
-                  <label for="review-date">Visit date</label>
-                  <input id="review-date" name="date" type="date" required />
-                </div>
-                <div class="form-field">
-                  <label for="review-topic">Main topic</label>
-                  <select id="review-topic" name="topic" required>
-                    <option value="">Choose a topic</option>
-                    <option>Food</option>
-                    <option>Service</option>
-                    <option>Atmosphere</option>
-                  </select>
-                </div>
-                <fieldset class="form-field form-field-full">
-                  <legend>Would you return?</legend>
-                  <div class="choice-row">
-                    <input id="review-return-yes" type="radio" name="return" value="yes" required />
-                    <label for="review-return-yes">Yes</label>
-                    <input id="review-return-no" type="radio" name="return" value="no" />
-                    <label for="review-return-no">No</label>
-                  </div>
-                </fieldset>
-                <div class="form-field form-field-full">
-                  <label for="review-message">Feedback</label>
-                  <textarea id="review-message" name="message" placeholder="Describe one specific experience" required></textarea>
-                </div>
-                <label class="check-label form-field-full" for="review-confirm">
-                  <input id="review-confirm" type="checkbox" required /> I understand that this form sends nothing
+<figure class="inline-figure">
+<img alt="Prepared table inside Istanbul Restaurant" class="img-fluid" src="images/restaurant-interior-table.jpg"/>
+<figcaption>A prepared table inside the dining room</figcaption>
+</figure>
+</article>
+<form action="feedback.html#feedback-result" class="col-12 col-lg-7 bg-body text-dark p-4 border-top border-warning border-4 shadow-sm" method="get">
+<!-- This classroom form has no server, so it validates fields but sends and stores nothing. -->
+<fieldset>
+<legend>Visit details</legend>
+<div class="form-grid row g-3">
+<div class="col-12 col-md-6">
+<label class="form-label" for="review-name">Name</label>
+<input class="form-control" id="review-name" name="name" placeholder="Your name" required="" type="text"/>
+</div>
+<div class="col-12 col-md-6">
+<label class="form-label" for="review-email">Email</label>
+<input class="form-control" id="review-email" name="email" placeholder="name@example.com" required="" type="email"/>
+</div>
+<div class="col-12 col-md-6">
+<label class="form-label" for="review-phone">Phone</label>
+<input class="form-control" id="review-phone" name="phone" placeholder="+7 700 000 00 00" required="" type="tel"/>
+</div>
+<div class="col-12 col-md-6">
+<label class="form-label" for="review-guests">Guests</label>
+<input class="form-control" id="review-guests" max="60" min="1" name="guests" placeholder="2" required="" type="number"/>
+</div>
+<div class="col-12 col-md-6">
+<label class="form-label" for="review-date">Visit date</label>
+<input class="form-control" id="review-date" name="date" required="" type="date"/>
+</div>
+<div class="col-12 col-md-6">
+<label class="form-label" for="review-topic">Main topic</label>
+<select class="form-select" id="review-topic" name="topic" required="">
+<option value="">Choose a topic</option>
+<option>Food</option>
+<option>Service</option>
+<option>Atmosphere</option>
+</select>
+</div>
+<fieldset class="col-12">
+<legend>Would you return?</legend>
+<div class="choice-row d-flex flex-wrap align-items-center gap-3">
+<input class="form-check-input" id="review-return-yes" name="return" required="" type="radio" value="yes"/>
+<label class="form-check-label" for="review-return-yes">Yes</label>
+<input class="form-check-input" id="review-return-no" name="return" type="radio" value="no"/>
+<label class="form-check-label" for="review-return-no">No</label>
+</div>
+</fieldset>
+<div class="col-12">
+<label class="form-label" for="review-message">Feedback</label>
+<textarea class="form-control" id="review-message" name="message" placeholder="Describe one specific experience" required=""></textarea>
+</div>
+<label class="col-12 d-flex align-items-center gap-2" for="review-confirm">
+<input class="form-check-input" id="review-confirm" required="" type="checkbox"/> I understand that this form sends nothing
                 </label>
-              </div>
-            </fieldset>
-            <p class="button-row">
-              <button class="button" type="submit">Check feedback</button>
-              <button class="button button-outline" type="reset">Reset</button>
-            </p>
-            <p class="form-result" id="feedback-result">
+</div>
+</fieldset>
+<p class="d-flex flex-wrap align-items-center gap-2 mt-4">
+<button class="btn btn-warning" type="submit">Check feedback</button>
+<button class="btn btn-outline-dark" type="reset">Reset</button>
+</p>
+<p class="form-result alert alert-warning mt-4" id="feedback-result">
               The example is complete, but no feedback was submitted.
             </p>
-          </form>
-        </div>
-      </section>
-    </main>
-
-    <footer class="site-footer">
-      <div class="site-shell footer-inner">
-        <div class="footer-brand">
-          <img src="images/istanbul-logo.jpg" alt="" />
-          <small>Istanbul · Uly Dala 56<br /><a href="tel:+77021006288">+7 702 100 62 88</a><br />&copy; 2026 Sanzhar, Jasulan and Madi</small>
-        </div>
-        <ul class="footer-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="menu.html">Menu</a></li>
-          <li><a href="faq.html">FAQ</a></li>
-          <li class="colophon-link"><a href="colophon.html">Colophon</a></li>
-        </ul>
-      </div>
-    </footer>
-  </body>
+</form>
+</div></div>
+</section>
+</main>
+<footer class="site-footer bg-dark text-white">
+<div class="footer-inner container py-4"><div class="row g-4 align-items-center">
+<div class="footer-brand col-12 col-md-6 d-flex align-items-center gap-3">
+<img alt="" class="footer-logo" src="images/istanbul-logo.jpg"/>
+<small>Istanbul · Uly Dala 56<br/><a class="link-light" href="tel:+77021006288">+7 702 100 62 88</a><br/>© 2026 Sanzhar, Jasulan and Madi</small>
+</div>
+<ul class="footer-links col-12 col-md-6 d-flex flex-wrap justify-content-md-end gap-3 list-unstyled mb-0">
+<li><a class="link-light" href="index.html">Home</a></li>
+<li><a class="link-light" href="menu.html">Menu</a></li>
+<li><a class="link-light" href="faq.html">FAQ</a></li>
+<li class="d-none"><a class="link-light" href="colophon.html">Colophon</a></li>
+</ul>
+</div></div>
+</footer>
+<script crossorigin="anonymous" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script></body>
 </html>

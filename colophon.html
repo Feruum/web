@@ -1,166 +1,154 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Team roles and technical notes for the Istanbul Restaurant student website." />
-    <meta name="author" content="Sanzhar, Jasulan and Madi" />
-    <title>Colophon — Istanbul Restaurant Project</title>
-    <link rel="stylesheet" href="css/base.css" />
-    <link rel="stylesheet" href="css/jasulan.css" />
-    <!-- This single internal rule demonstrates that a later author rule can override an external rule. -->
-    <style>
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="Team roles and technical notes for the Istanbul Restaurant student website." name="description"/>
+<meta content="Sanzhar, Jasulan and Madi" name="author"/>
+<title>Colophon — Istanbul Restaurant Project</title><!-- Bootstrap 5.3.8 via CDN; local correction layer follows. --><link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" rel="stylesheet"/>
+<link href="css/base.css" rel="stylesheet"/>
+<!-- This single internal rule demonstrates that a later author rule can override an external rule. -->
+<style>
       .cascade-demo { letter-spacing: 0.28em; }
     </style>
-  </head>
-  <body class="colophon-page">
-    <!-- Authors: Sanzhar, Jasulan and Madi. The colophon is shared team work. -->
-    <a class="skip-link" href="#main-content">Skip to content</a>
-    <header class="site-header">
-      <!-- This div creates one layout row for the brand and navigation without replacing a semantic element. -->
-      <div class="site-shell header-inner">
-        <a class="brand" href="index.html" aria-label="Istanbul Restaurant home">
-          <img src="images/istanbul-logo.jpg" alt="Istanbul Turkish Taste logo" />
-        </a>
-        <nav class="site-nav" aria-label="Main navigation">
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="menu.html">Menu</a></li>
-            <li><a href="visit.html">Visit</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="faq.html">FAQ</a></li>
-            <li><a href="feedback.html">Feedback</a></li>
-            <li class="colophon-link"><a href="colophon.html" aria-current="page">Colophon</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-
-    <main id="main-content">
-      <!-- This section introduces the technical notes with one clear heading. -->
-      <section class="page-hero" aria-labelledby="colophon-title">
-        <div class="page-hero-copy">
-          <p class="eyebrow cascade-demo">Project notes</p>
-          <h1 id="colophon-title">How the site was made</h1>
-          <p class="lead">
-            An eight-page student website built by a three-person team with plain HTML and CSS.
+</head>
+<body class="colophon-page">
+<!-- Authors: Sanzhar, Jasulan and Madi. The colophon is shared team work. -->
+<a class="skip-link" href="#main-content">Skip to content</a>
+<header class="site-header bg-body border-bottom">
+<!-- This div creates one layout row for the brand and navigation without replacing a semantic element. -->
+<div class="container">
+<nav aria-label="Main navigation" class="navbar navbar-expand-lg w-100" data-bs-theme="light"><a aria-label="Istanbul Restaurant home" class="navbar-brand me-auto" href="index.html">
+<img alt="Istanbul Turkish Taste logo" class="brand-logo" src="images/istanbul-logo.jpg"/>
+</a><button aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#mainNavbar" data-bs-toggle="collapse" type="button"><span class="navbar-toggler-icon"></span></button>
+<div class="collapse navbar-collapse justify-content-lg-end" id="mainNavbar"><ul class="navbar-nav gap-lg-2 mb-2 mb-lg-0">
+<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+<li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+<li class="nav-item"><a class="nav-link" href="visit.html">Visit</a></li>
+<li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+<li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+<li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+<li class="nav-item"><a class="nav-link" href="feedback.html">Feedback</a></li>
+<li class="nav-item d-none"><a aria-current="page" class="nav-link active" href="colophon.html">Colophon</a></li>
+</ul></div>
+</nav>
+</div>
+</header>
+<main id="main-content">
+<!-- This section introduces the technical notes with one clear heading. -->
+<section aria-labelledby="colophon-title" class="container-fluid px-0 border-bottom">
+<div class="row g-0 align-items-stretch"><div class="page-hero-copy col-12 col-lg-6 d-flex flex-column justify-content-center p-4 p-md-5">
+<p class="small fw-bold text-uppercase text-brand-accent mb-3">Project notes</p>
+<h1 class="display-2 mb-4" id="colophon-title">How the site was made</h1>
+<p class="lead">
+            An eight-page student website built by a three-person team with semantic HTML and Bootstrap.
           </p>
-        </div>
-        <div class="page-hero-media">
-          <img src="images/restaurant-exterior-wide.jpg" alt="Istanbul Restaurant exterior at night" />
-        </div>
-      </section>
-
-      <section class="section" aria-labelledby="team-title">
-        <div class="site-shell colophon-grid">
-          <div>
-            <p class="eyebrow">Three people</p>
-            <h2 id="team-title">Team responsibilities</h2>
-            <p>
+</div><div class="page-hero-media col-12 col-lg-6 m-0">
+<img alt="Istanbul Restaurant exterior at night" class="img-fluid w-100 h-100 object-fit-cover" src="images/restaurant-exterior-wide.jpg"/>
+</div></div></section>
+<section aria-labelledby="team-title" class="py-5">
+<div class="colophon-grid container"><div class="row g-4 align-items-start">
+<div class="col-12 col-lg-6">
+<p class="small fw-bold text-uppercase text-brand-accent mb-3">Three people</p>
+<h2 class="display-5 mb-4" id="team-title">Team responsibilities</h2>
+<p>
               Everyone can explain the shared header, navigation, colours and responsive layout.
               Each member also has two main content pages to present.
             </p>
-          </div>
-          <ol class="team-list">
-            <li><strong>Sanzhar — Menu and Feedback</strong><br />Menu table, ordering notes and review form.</li>
-            <li><strong>Jasulan — Visit and Gallery</strong><br />Contact details, map and photo grid.</li>
-            <li><strong>Madi — About and FAQ</strong><br />Restaurant story, questions and contact form.</li>
-          </ol>
-        </div>
-      </section>
-
-      <section class="section section-dark" aria-labelledby="structure-title">
-        <div class="site-shell content-grid">
-          <div class="span-5">
-            <p class="eyebrow">Simple structure</p>
-            <h2 id="structure-title">Built for clear explanation</h2>
-            <p class="lead">
-              No framework and no JavaScript. The project uses semantic elements, relative links
-              and a small set of reusable CSS classes.
+</div>
+<ol class="team-list col-12 col-lg-6">
+<li><strong>Sanzhar — Menu and Feedback</strong><br/>Menu table, ordering notes and review form.</li>
+<li><strong>Jasulan — Visit and Gallery</strong><br/>Contact details, map and photo grid.</li>
+<li><strong>Madi — About and FAQ</strong><br/>Restaurant story, questions and contact form.</li>
+</ol>
+</div></div>
+</section>
+<section aria-labelledby="structure-title" class="py-5 bg-dark text-white">
+<div class="container"><div class="row g-4 align-items-start">
+<div class="col-12 col-lg-5">
+<p class="small fw-bold text-uppercase text-brand-accent mb-3">Simple structure</p>
+<h2 class="display-5 mb-4" id="structure-title">Built for clear explanation</h2>
+<p class="lead">
+              Bootstrap supplies the layout and responsive navigation. The project keeps semantic elements, relative links and a small brand stylesheet.
             </p>
-          </div>
-          <div class="span-7 note-panel">
-            <ul class="detail-list">
-              <!-- A span styles the short label inside each list item without creating a new section. -->
-              <li><span>Pages</span><strong>8 HTML files</strong></li>
-              <li><span>Shared design</span><strong>css/base.css</strong></li>
-              <li><span>Page styles</span><strong>3 named CSS files</strong></li>
-              <li><span>Forms</span><strong>3 practice forms</strong></li>
-              <li><span>Images</span><strong>Local JPG files</strong></li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <section class="section" aria-labelledby="code-title">
-        <div class="site-shell colophon-grid">
-          <div>
-            <p class="eyebrow">HTML and CSS</p>
-            <h2 id="code-title">What the main pieces do</h2>
-          </div>
-          <div>
-            <h3>Semantic HTML</h3>
-            <p>
-              <code>header</code>, <code>nav</code>, <code>main</code>,
+</div>
+<div class="col-12 col-lg-7 bg-body text-dark p-4 border-start border-warning border-4 shadow-sm">
+<ul class="list-group list-group-flush">
+<!-- A span styles the short label inside each list item without creating a new section. -->
+<li class="list-group-item d-flex justify-content-between gap-3"><span>Pages</span><strong>8 HTML files</strong></li>
+<li class="list-group-item d-flex justify-content-between gap-3"><span>Shared design</span><strong>css/base.css</strong></li>
+<li class="list-group-item d-flex justify-content-between gap-3"><span>Page styles</span><strong>Bootstrap CDN and one correction file</strong></li>
+<li class="list-group-item d-flex justify-content-between gap-3"><span>Forms</span><strong>3 practice forms</strong></li>
+<li class="list-group-item d-flex justify-content-between gap-3"><span>Images</span><strong>Local JPG files</strong></li>
+</ul>
+</div>
+</div></div>
+</section>
+<section aria-labelledby="code-title" class="py-5">
+<div class="colophon-grid container"><div class="row g-4 align-items-start">
+<div class="col-12 col-lg-6">
+<p class="small fw-bold text-uppercase text-brand-accent mb-3">HTML and CSS</p>
+<h2 class="display-5 mb-4" id="code-title">What the main pieces do</h2>
+</div>
+<div class="col-12 col-lg-6">
+<h3 class="h4 mb-3">Semantic HTML</h3>
+<p>
+<code>header</code>, <code>nav</code>, <code>main</code>,
               <code>section</code> and <code>footer</code> describe the page structure.
             </p>
-            <h3>Reusable classes</h3>
-            <p>
-              Classes such as <code>site-shell</code>, <code>page-hero</code>,
-              <code>content-grid</code> and <code>button</code> keep the pages consistent.
+<h3 class="h4 mb-3">Reusable classes</h3>
+<p>
+              Classes such as <code>container</code>, <code>row</code>, <code>col-lg-6</code> and <code>btn</code> keep the pages consistent.
             </p>
-            <h3>Responsive layout</h3>
-            <p>
-              CSS media queries change two-column areas into one column on small screens. Images
-              use <code>object-fit: cover</code> so they fill their frames.
+<h3 class="h4 mb-3">Responsive layout</h3>
+<p>
+              Bootstrap breakpoint classes change columns at phone, tablet and desktop widths. The bundled collapse component controls the mobile menu.
             </p>
-            <p>
+<p>
               Press <kbd>Ctrl</kbd> + <kbd>U</kbd> to read the source. A successful checker can
               report <samp>Document checking completed</samp>.
             </p>
-            <pre><code>&lt;main id="main-content"&gt;
+<pre><code>&lt;main id="main-content"&gt;
   &lt;section&gt;...&lt;/section&gt;
 &lt;/main&gt;</code></pre>
-            <hr />
-          </div>
-        </div>
-      </section>
-
-      <section class="section section-brown" aria-labelledby="content-title">
-        <div class="site-shell content-grid">
-          <div class="span-5">
-            <p class="eyebrow">Content check</p>
-            <h2 id="content-title">Restaurant details</h2>
-          </div>
-          <div class="span-7">
-            <p>
+<hr/>
+</div>
+</div></div>
+</section>
+<section aria-labelledby="content-title" class="py-5 brand-brown text-white">
+<div class="container"><div class="row g-4 align-items-start">
+<div class="col-12 col-lg-5">
+<p class="small fw-bold text-uppercase text-brand-accent mb-3">Content check</p>
+<h2 class="display-5 mb-4" id="content-title">Restaurant details</h2>
+</div>
+<div class="col-12 col-lg-7">
+<p>
               Address, hours, phone, services and rating were checked against the restaurant’s
               public 2GIS listing. Menu highlights and the brand identity were checked against its
               public Instagram profile.
             </p>
-            <p class="button-row">
-              <a class="button" href="https://2gis.kz/astana/firm/70000001069922617" target="_blank" rel="noopener noreferrer">Open 2GIS</a>
-              <a class="button button-outline" href="https://www.instagram.com/istanbul.turkishtaste/" target="_blank" rel="noopener noreferrer">Open Instagram</a>
-            </p>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer class="site-footer">
-      <div class="site-shell footer-inner">
-        <div class="footer-brand">
-          <img src="images/istanbul-logo.jpg" alt="" />
-          <small>Istanbul · Uly Dala 56<br /><a href="tel:+77021006288">+7 702 100 62 88</a><br />&copy; 2026 Sanzhar, Jasulan and Madi</small>
-        </div>
-        <ul class="footer-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="menu.html">Menu</a></li>
-          <li><a href="visit.html">Visit</a></li>
-          <li><a href="gallery.html">Gallery</a></li>
-        </ul>
-      </div>
-    </footer>
-  </body>
+<p class="d-flex flex-wrap align-items-center gap-2 mt-4">
+<a class="btn btn-warning" href="https://2gis.kz/astana/firm/70000001069922617" rel="noopener noreferrer" target="_blank">Open 2GIS</a>
+<a class="btn btn-outline-light" href="https://www.instagram.com/istanbul.turkishtaste/" rel="noopener noreferrer" target="_blank">Open Instagram</a>
+</p>
+</div>
+</div></div>
+</section>
+</main>
+<footer class="site-footer bg-dark text-white">
+<div class="footer-inner container py-4"><div class="row g-4 align-items-center">
+<div class="footer-brand col-12 col-md-6 d-flex align-items-center gap-3">
+<img alt="" class="footer-logo" src="images/istanbul-logo.jpg"/>
+<small>Istanbul · Uly Dala 56<br/><a class="link-light" href="tel:+77021006288">+7 702 100 62 88</a><br/>© 2026 Sanzhar, Jasulan and Madi</small>
+</div>
+<ul class="footer-links col-12 col-md-6 d-flex flex-wrap justify-content-md-end gap-3 list-unstyled mb-0">
+<li><a class="link-light" href="index.html">Home</a></li>
+<li><a class="link-light" href="menu.html">Menu</a></li>
+<li><a class="link-light" href="visit.html">Visit</a></li>
+<li><a class="link-light" href="gallery.html">Gallery</a></li>
+</ul>
+</div></div>
+</footer>
+<script crossorigin="anonymous" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script></body>
 </html>

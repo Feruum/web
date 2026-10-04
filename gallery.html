@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1" name="viewport"/>
-<meta content="Photo gallery of Istanbul Restaurant in Astana." name="description"/>
-<meta content="Jasulan" name="author"/>
-<title>Gallery — Istanbul Restaurant Astana</title><!-- Bootstrap 5.3.8 via CDN; local correction layer follows. --><link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" rel="stylesheet"/>
-<link href="css/base.css" rel="stylesheet"/>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1" name="viewport">
+<meta content="Photo gallery of Istanbul Restaurant in Astana." name="description">
+<meta content="Jasulan" name="author">
+<title>Gallery — Istanbul Restaurant Astana</title>
+<!-- Pinned Bootstrap 5.3.8; local correction layer follows. --><link crossorigin="anonymous" href="vendor/bootstrap/bootstrap.min.css" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" rel="stylesheet">
+<link href="css/base.css" rel="stylesheet">
+<link rel="icon" type="image/jpeg" href="images/istanbul-logo.jpg">
 </head>
 <body class="gallery-page">
 <!-- Author: Jasulan. -->
@@ -15,9 +16,9 @@
 <header class="site-header bg-body border-bottom">
 <div class="container">
 <nav aria-label="Main navigation" class="navbar navbar-expand-lg w-100" data-bs-theme="light"><a aria-label="Istanbul Restaurant home" class="navbar-brand me-auto" href="index.html">
-<img alt="Istanbul Turkish Taste logo" class="brand-logo" src="images/istanbul-logo.jpg"/>
-</a><button aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#mainNavbar" data-bs-toggle="collapse" type="button"><span class="navbar-toggler-icon"></span></button>
-<div class="collapse navbar-collapse justify-content-lg-end" id="mainNavbar"><ul class="navbar-nav gap-lg-2 mb-2 mb-lg-0">
+<img alt="Istanbul Turkish Taste logo" class="brand-logo" src="images/istanbul-logo.jpg">
+</a><button aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#main-navbar" data-bs-toggle="collapse" type="button" id="navigation-toggle"><span class="navbar-toggler-icon"></span></button>
+<div class="collapse navbar-collapse justify-content-lg-end" id="main-navbar"><ul class="navbar-nav gap-lg-2 mb-2 mb-lg-0" id="navigation-links">
 <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
 <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
 <li class="nav-item"><a class="nav-link" href="visit.html">Visit</a></li>
@@ -25,7 +26,6 @@
 <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
 <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
 <li class="nav-item"><a class="nav-link" href="feedback.html">Feedback</a></li>
-<li class="nav-item d-none"><a class="nav-link" href="colophon.html">Colophon</a></li>
 </ul></div>
 </nav>
 </div>
@@ -45,45 +45,48 @@
 </div></div>
 </section>
 <section aria-label="Restaurant photo gallery" class="py-5">
-<div class="gallery-grid container"><div class="row g-3">
+<div class="gallery-grid container" id="gallery-items"><div class="row g-3">
 <figure class="col-12 col-md-6 col-lg-3 mb-0">
-<div class="ratio ratio-4x3 overflow-hidden rounded"><img alt="Istanbul Restaurant exterior at night" class="img-fluid w-100 h-100 object-fit-cover" src="images/restaurant-exterior-wide.jpg"/></div>
+<div class="ratio ratio-4x3 overflow-hidden rounded"><img alt="Istanbul Restaurant exterior at night" class="img-fluid w-100 h-100 object-fit-cover" src="images/restaurant-exterior-wide.jpg" decoding="async"></div>
 <figcaption class="small mt-2">The restaurant on Uly Dala Avenue</figcaption>
 </figure>
 <figure class="col-12 col-md-6 col-lg-3 mb-0">
-<div class="ratio ratio-4x3 overflow-hidden rounded"><img alt="Dining table and soft seating inside the restaurant" class="img-fluid w-100 h-100 object-fit-cover" src="images/restaurant-interior-table.jpg"/></div>
+<div class="ratio ratio-4x3 overflow-hidden rounded"><img alt="Dining table and soft seating inside the restaurant" class="img-fluid w-100 h-100 object-fit-cover" src="images/restaurant-interior-table.jpg" decoding="async"></div>
 <figcaption class="small mt-2">A table prepared for guests</figcaption>
 </figure>
 <figure class="col-12 col-md-6 col-lg-3 mb-0">
-<div class="ratio ratio-4x3 overflow-hidden rounded"><img alt="Restaurant window with the flame logo and red flowers" class="img-fluid w-100 h-100 object-fit-cover" src="images/restaurant-window-logo.jpg"/></div>
+<div class="ratio ratio-4x3 overflow-hidden rounded"><img alt="Restaurant window with the flame logo and red flowers" class="img-fluid w-100 h-100 object-fit-cover" src="images/restaurant-window-logo.jpg" decoding="async"></div>
 <figcaption class="small mt-2">The flame logo by the window</figcaption>
 </figure>
 <figure class="col-12 col-md-6 col-lg-3 mb-0">
-<div class="ratio ratio-4x3 overflow-hidden rounded"><img alt="Close view of the red and yellow Istanbul flame sign" class="img-fluid w-100 h-100 object-fit-cover" src="images/restaurant-sign-detail.jpg"/></div>
+<div class="ratio ratio-4x3 overflow-hidden rounded"><img alt="Close view of the red and yellow Istanbul flame sign" class="img-fluid w-100 h-100 object-fit-cover" src="images/restaurant-sign-detail.jpg" decoding="async"></div>
 <figcaption class="small mt-2">The restaurant symbol</figcaption>
 </figure>
 <figure class="col-12 col-md-6 col-lg-3 mb-0">
-<div class="ratio ratio-4x3 overflow-hidden rounded"><img alt="Dining room seen through large windows at night" class="img-fluid w-100 h-100 object-fit-cover" src="images/restaurant-dining-room.jpg"/></div>
+<div class="ratio ratio-4x3 overflow-hidden rounded"><img alt="Dining room seen through large windows at night" class="img-fluid w-100 h-100 object-fit-cover" src="images/restaurant-dining-room.jpg" decoding="async"></div>
 <figcaption class="small mt-2">The dining room after sunset</figcaption>
 </figure>
 <figure class="col-12 col-md-6 col-lg-3 mb-0">
-<div class="ratio ratio-4x3 overflow-hidden rounded"><img alt="Flower-lined walkway at the restaurant entrance" class="img-fluid w-100 h-100 object-fit-cover" src="images/restaurant-entrance.jpg"/></div>
+<div class="ratio ratio-4x3 overflow-hidden rounded"><img alt="Flower-lined walkway at the restaurant entrance" class="img-fluid w-100 h-100 object-fit-cover" src="images/restaurant-entrance.jpg" decoding="async"></div>
 <figcaption class="small mt-2">The flower-lined entrance</figcaption>
 </figure>
 <figure class="col-12 col-md-6 col-lg-3 mb-0">
-<div class="ratio ratio-4x3 overflow-hidden rounded"><img alt="Red floral arch at the terrace entrance" class="img-fluid w-100 h-100 object-fit-cover" src="images/restaurant-terrace-arch.jpg"/></div>
+<div class="ratio ratio-4x3 overflow-hidden rounded"><img alt="Red floral arch at the terrace entrance" class="img-fluid w-100 h-100 object-fit-cover" src="images/restaurant-terrace-arch.jpg" decoding="async"></div>
 <figcaption class="small mt-2">The terrace arch</figcaption>
 </figure>
 <figure class="col-12 col-md-6 col-lg-3 mb-0">
-<div class="ratio ratio-4x3 overflow-hidden rounded"><img alt="Front view of Istanbul Restaurant and terrace at night" class="img-fluid w-100 h-100 object-fit-cover" src="images/restaurant-exterior-front.jpg"/></div>
+<div class="ratio ratio-4x3 overflow-hidden rounded"><img alt="Front view of Istanbul Restaurant and terrace at night" class="img-fluid w-100 h-100 object-fit-cover" src="images/restaurant-exterior-front.jpg" decoding="async"></div>
 <figcaption class="small mt-2">A bright evening view from the street</figcaption>
 </figure>
 </div></div>
-</section>
+<div class="container">
+<div id="generated-gallery-items" class="row g-3" aria-live="polite"></div>
+<p id="gallery-empty" class="is-hidden">No photographs match your selection. Show all photographs to continue.</p>
+</div></section>
 <section aria-labelledby="atmosphere-title" class="py-5 brand-brown text-white">
 <div class="container"><div class="row g-4 align-items-start">
 <figure class="gallery-feature col-12 col-lg-4">
-<img alt="Flower-lined entrance to Istanbul Restaurant" class="img-fluid" src="images/restaurant-entrance.jpg"/>
+<img alt="Flower-lined entrance to Istanbul Restaurant" class="img-fluid" src="images/restaurant-entrance.jpg" decoding="async">
 <figcaption>Entrance from Uly Dala Avenue</figcaption>
 </figure>
 <div class="col-12 col-lg-8">
@@ -98,19 +101,25 @@
               the entrance, while <i>Istanbul Terrace</i> appears in neon.
               <mark>Uly Dala Avenue 56</mark> is the address shown here.
             </p>
-<hr/>
+<hr>
 <ol class="visit-steps">
 <li>See the illuminated sign from the street.</li>
 <li>Walk through the flower-covered terrace entrance.</li>
 <li>
                 Choose a table:
-                <ul><li>inside by the windows;</li><li>outside on the terrace.</li></ul>
+                <ul>
+<li>inside by the windows;</li>
+<li>outside on the terrace.</li>
+</ul>
 </li>
 </ol>
 <dl class="gallery-details">
-<dt>Outside</dt><dd>A summer terrace and a floral arch.</dd>
-<dt>Inside</dt><dd>Soft chairs, large windows and warm lighting.</dd>
-<dt>Address</dt><dd>Uly Dala Avenue 56, Astana.</dd>
+<dt>Outside</dt>
+<dd>A summer terrace and a floral arch.</dd>
+<dt>Inside</dt>
+<dd>Soft chairs, large windows and warm lighting.</dd>
+<dt>Address</dt>
+<dd>Uly Dala Avenue 56, Astana.</dd>
 </dl>
 <blockquote>
 <p><q>An atmospheric place with friendly staff.</q></p>
@@ -122,18 +131,25 @@
 </section>
 </main>
 <footer class="site-footer bg-dark text-white">
-<div class="footer-inner container py-4"><div class="row g-4 align-items-center">
-<div class="footer-brand col-12 col-md-6 d-flex align-items-center gap-3">
-<img alt="" class="footer-logo" src="images/istanbul-logo.jpg"/>
-<small>Istanbul · Uly Dala 56<br/><a class="link-light" href="tel:+77021006288">+7 702 100 62 88</a><br/>© 2026 Sanzhar, Jasulan and Madi</small>
-</div>
-<ul class="footer-links col-12 col-md-6 d-flex flex-wrap justify-content-md-end gap-3 list-unstyled mb-0">
+  <div class="container py-4"><div class="row g-4 align-items-center">
+    <div class="col-12 col-lg-5 d-flex align-items-center gap-3">
+      <img alt="" class="footer-logo" src="images/istanbul-logo.jpg">
+      <small>Istanbul · Uly Dala 56<br><a class="link-light" href="tel:+77021006288">+7 702 100 62 88</a><br>© 2026 Sanzhar, Jasulan and Madi</small>
+    </div>
+    <nav class="col-12 col-lg-7" aria-label="Footer navigation">
+      <ul class="d-flex flex-wrap justify-content-lg-end gap-3 list-unstyled mb-0">
 <li><a class="link-light" href="index.html">Home</a></li>
 <li><a class="link-light" href="menu.html">Menu</a></li>
 <li><a class="link-light" href="visit.html">Visit</a></li>
-<li class="d-none"><a class="link-light" href="colophon.html">Colophon</a></li>
+<li><a class="link-light" href="gallery.html">Gallery</a></li>
+<li><a class="link-light" href="about.html">About</a></li>
+<li><a class="link-light" href="faq.html">FAQ</a></li>
+<li><a class="link-light" href="feedback.html">Feedback</a></li>
+<li><a class="link-light" href="colophon.html">Colophon</a></li>
 </ul>
-</div></div>
+    </nav>
+  </div></div>
 </footer>
-<script crossorigin="anonymous" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script></body>
+<script crossorigin="anonymous" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" src="vendor/bootstrap/bootstrap.bundle.min.js"></script>
+</body>
 </html>

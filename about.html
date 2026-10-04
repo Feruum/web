@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1" name="viewport"/>
-<meta content="The story, food and atmosphere of Istanbul Restaurant in Astana." name="description"/>
-<meta content="Madi" name="author"/>
-<title>About — Istanbul Restaurant Astana</title><!-- Bootstrap 5.3.8 via CDN; local correction layer follows. --><link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" rel="stylesheet"/>
-<link href="css/base.css" rel="stylesheet"/>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1" name="viewport">
+<meta content="The story, food and atmosphere of Istanbul Restaurant in Astana." name="description">
+<meta content="Madi" name="author">
+<title>About — Istanbul Restaurant Astana</title>
+<!-- Pinned Bootstrap 5.3.8; local correction layer follows. --><link crossorigin="anonymous" href="vendor/bootstrap/bootstrap.min.css" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" rel="stylesheet">
+<link href="css/base.css" rel="stylesheet">
+<link rel="icon" type="image/jpeg" href="images/istanbul-logo.jpg">
 </head>
 <body class="about-page">
 <!-- Author: Madi. -->
@@ -15,9 +16,9 @@
 <header class="site-header bg-body border-bottom">
 <div class="container">
 <nav aria-label="Main navigation" class="navbar navbar-expand-lg w-100" data-bs-theme="light"><a aria-label="Istanbul Restaurant home" class="navbar-brand me-auto" href="index.html">
-<img alt="Istanbul Turkish Taste logo" class="brand-logo" src="images/istanbul-logo.jpg"/>
-</a><button aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#mainNavbar" data-bs-toggle="collapse" type="button"><span class="navbar-toggler-icon"></span></button>
-<div class="collapse navbar-collapse justify-content-lg-end" id="mainNavbar"><ul class="navbar-nav gap-lg-2 mb-2 mb-lg-0">
+<img alt="Istanbul Turkish Taste logo" class="brand-logo" src="images/istanbul-logo.jpg">
+</a><button aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#main-navbar" data-bs-toggle="collapse" type="button" id="navigation-toggle"><span class="navbar-toggler-icon"></span></button>
+<div class="collapse navbar-collapse justify-content-lg-end" id="main-navbar"><ul class="navbar-nav gap-lg-2 mb-2 mb-lg-0" id="navigation-links">
 <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
 <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
 <li class="nav-item"><a class="nav-link" href="visit.html">Visit</a></li>
@@ -25,7 +26,6 @@
 <li class="nav-item"><a aria-current="page" class="nav-link active" href="about.html">About</a></li>
 <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
 <li class="nav-item"><a class="nav-link" href="feedback.html">Feedback</a></li>
-<li class="nav-item d-none"><a class="nav-link" href="colophon.html">Colophon</a></li>
 </ul></div>
 </nav>
 </div>
@@ -33,7 +33,8 @@
 <main id="main-content">
 <!-- This section groups the restaurant story with the photograph that supports it. -->
 <section aria-labelledby="about-title" class="container-fluid px-0 border-bottom">
-<div class="row g-0 align-items-stretch"><div class="about-story-copy col-12 col-lg-6 d-flex flex-column justify-content-center p-4 p-md-5">
+<div class="row g-0 align-items-stretch">
+<div class="about-story-copy col-12 col-lg-6 d-flex flex-column justify-content-center p-4 p-md-5">
 <p class="small fw-bold text-uppercase text-brand-accent mb-3">Istanbul → Astana</p>
 <h1 class="display-2 mb-4" id="about-title">A taste of Türkiye</h1>
 <p class="lead">
@@ -41,16 +42,18 @@
             from Istanbul and changing Turkish specials.
           </p>
 <p><a href="#features-title">Visitor features</a> · <a href="#identity-title">Visual identity</a></p>
-</div><figure class="about-story-media col-12 col-lg-6 m-0">
-<img alt="Warmly lit dining room at Istanbul Restaurant" class="img-fluid w-100 h-100 object-fit-cover" src="images/restaurant-dining-room.jpg"/>
+</div>
+<figure class="about-story-media col-12 col-lg-6 m-0">
+<img alt="Warmly lit dining room at Istanbul Restaurant" class="img-fluid w-100 h-100 object-fit-cover" src="images/restaurant-dining-room.jpg" decoding="async">
 <figcaption class="small text-body-secondary d-block p-2">The dining room after sunset</figcaption>
-</figure></div></section>
+</figure>
+</div></section>
 <section aria-labelledby="story-title" class="py-5">
 <div class="container"><div class="row g-4 align-items-start">
-<aside class="col-12 col-lg-5">
+<div class="col-12 col-lg-5">
 <p class="small fw-bold text-uppercase text-brand-accent mb-3">The restaurant</p>
 <h2 class="display-5 mb-4" id="story-title">More than one familiar dish</h2>
-</aside>
+</div>
 <div class="col-12 col-lg-7">
 <p class="lead">
               Guests can find Turkish breakfast, döner, kebabs and künefe alongside café dishes.
@@ -68,23 +71,38 @@
 <table class="table table-striped table-hover">
 <caption class="caption-top">Public restaurant facts</caption>
 <thead>
-<tr><th scope="col">Fact</th><th scope="col">Published detail</th></tr>
+<tr>
+<th scope="col">Fact</th>
+<th scope="col">Published detail</th>
+</tr>
 </thead>
 <tbody>
-<tr><th scope="row">Address</th><td>Uly Dala Avenue 56</td></tr>
-<tr><th scope="row">Hours</th><td>Daily, 08:00–02:00</td></tr>
-<tr><th scope="row">Rating</th><td>4.7 from 1,811 ratings<sup>1</sup></td></tr>
-<tr><th scope="row">Capacity</th><td>Up to 60 guests</td></tr>
+<tr>
+<th scope="row">Address</th>
+<td>Uly Dala Avenue 56</td>
+</tr>
+<tr>
+<th scope="row">Hours</th>
+<td>Daily, 08:00–02:00</td>
+</tr>
+<tr>
+<th scope="row">Rating</th>
+<td>4.7 on 2GIS<sup>1</sup>
+</td>
+</tr>
+<tr>
+<th scope="row">Capacity</th>
+<td>Up to 60 guests</td>
+</tr>
 </tbody>
 </table>
 </div>
-<p><small><sup>1</sup> Rating recorded during project research.</small></p>
 <p>
-<img alt="Red and yellow flame symbol" class="img-fluid rounded float-md-start me-md-3 mb-3" src="images/restaurant-sign-detail.jpg"/>
+<img alt="Red and yellow flame symbol" class="img-fluid rounded float-md-start me-md-3 mb-3" src="images/restaurant-sign-detail.jpg" decoding="async">
               The flame symbol repeats on the façade and inside the terrace, helping visitors
               recognise the entrance after dark.
             </p>
-<hr class="clearfix"/>
+<hr class="clearfix">
 </div>
 </div></div>
 </section>
@@ -93,19 +111,25 @@
 <p class="small fw-bold text-uppercase text-brand-accent mb-3">What visitors can expect</p>
 <h2 class="display-5 mb-4" id="features-title">Food, terrace and time together</h2>
 <ul class="feature-list row g-3 list-unstyled">
-<li class="col-12 col-md-6 col-lg-4 border p-3"><strong class="d-block mb-2">Turkish breakfast</strong>A generous morning option for sharing.</li>
-<li class="col-12 col-md-6 col-lg-4 border p-3"><strong class="d-block mb-2">Grill dishes</strong>Döner, Adana kebab and other grilled food.</li>
-<li class="col-12 col-md-6 col-lg-4 border p-3"><strong class="d-block mb-2">Turkish sweets</strong>Künefe and changing dessert specials.</li>
-<li class="col-12 col-md-6 col-lg-4 border p-3"><strong class="d-block mb-2">Family friendly</strong>A children’s menu and children’s corner.</li>
-<li class="col-12 col-md-6 col-lg-4 border p-3"><strong class="d-block mb-2">Summer terrace</strong>Outdoor tables framed by flowers and lights.</li>
-<li class="col-12 col-md-6 col-lg-4 border p-3"><strong class="d-block mb-2">Group occasions</strong>Booking, banquets and space for up to 60 guests.</li>
+<li class="col-12 col-md-6 col-lg-4 border p-3">
+<strong class="d-block mb-2">Turkish breakfast</strong>A generous morning option for sharing.</li>
+<li class="col-12 col-md-6 col-lg-4 border p-3">
+<strong class="d-block mb-2">Grill dishes</strong>Döner, Adana kebab and other grilled food.</li>
+<li class="col-12 col-md-6 col-lg-4 border p-3">
+<strong class="d-block mb-2">Turkish sweets</strong>Künefe and changing dessert specials.</li>
+<li class="col-12 col-md-6 col-lg-4 border p-3">
+<strong class="d-block mb-2">Family friendly</strong>A children’s menu and children’s corner.</li>
+<li class="col-12 col-md-6 col-lg-4 border p-3">
+<strong class="d-block mb-2">Summer terrace</strong>Outdoor tables framed by flowers and lights.</li>
+<li class="col-12 col-md-6 col-lg-4 border p-3">
+<strong class="d-block mb-2">Group occasions</strong>Booking, banquets and space for up to 60 guests.</li>
 </ul>
 </div>
 </section>
 <section aria-labelledby="identity-title" class="py-5">
 <div class="container"><div class="row g-4 align-items-start">
 <div class="col-12 col-lg-7">
-<img alt="Istanbul Restaurant flame sign beside red flowers" class="img-fluid" src="images/restaurant-sign-detail.jpg"/>
+<img alt="Istanbul Restaurant flame sign beside red flowers" class="img-fluid" src="images/restaurant-sign-detail.jpg" decoding="async">
 </div>
 <div class="col-12 col-lg-5">
 <p class="small fw-bold text-uppercase text-brand-accent mb-3">The visual identity</p>
@@ -115,27 +139,37 @@
               follows the same <b>black</b>, <i>warm yellow</i>, <mark>red</mark> and white palette.
             </p>
 <dl class="identity-details">
-<dt>Flame</dt><dd>The restaurant symbol.</dd>
-<dt>Flowers</dt><dd>Terrace decoration.</dd>
+<dt>Flame</dt>
+<dd>The restaurant symbol.</dd>
+<dt>Flowers</dt>
+<dd>Terrace decoration.</dd>
 </dl>
 <p class="d-flex flex-wrap align-items-center gap-2 mt-4"><a class="btn btn-warning" href="gallery.html">See the gallery</a></p>
+<p class="d-flex flex-wrap gap-2 mt-4"><a class="btn btn-warning" href="faq.html#answers-title">Prepare a question</a><a class="btn btn-outline-dark" href="visit.html#plan-visit">Plan a visit</a></p>
 </div>
 </div></div>
 </section>
 </main>
 <footer class="site-footer bg-dark text-white">
-<div class="footer-inner container py-4"><div class="row g-4 align-items-center">
-<div class="footer-brand col-12 col-md-6 d-flex align-items-center gap-3">
-<img alt="" class="footer-logo" src="images/istanbul-logo.jpg"/>
-<small>Istanbul · Uly Dala 56<br/><a class="link-light" href="tel:+77021006288">+7 702 100 62 88</a><br/>© 2026 Sanzhar, Jasulan and Madi</small>
-</div>
-<ul class="footer-links col-12 col-md-6 d-flex flex-wrap justify-content-md-end gap-3 list-unstyled mb-0">
+  <div class="container py-4"><div class="row g-4 align-items-center">
+    <div class="col-12 col-lg-5 d-flex align-items-center gap-3">
+      <img alt="" class="footer-logo" src="images/istanbul-logo.jpg">
+      <small>Istanbul · Uly Dala 56<br><a class="link-light" href="tel:+77021006288">+7 702 100 62 88</a><br>© 2026 Sanzhar, Jasulan and Madi</small>
+    </div>
+    <nav class="col-12 col-lg-7" aria-label="Footer navigation">
+      <ul class="d-flex flex-wrap justify-content-lg-end gap-3 list-unstyled mb-0">
 <li><a class="link-light" href="index.html">Home</a></li>
 <li><a class="link-light" href="menu.html">Menu</a></li>
 <li><a class="link-light" href="visit.html">Visit</a></li>
-<li class="d-none"><a class="link-light" href="colophon.html">Colophon</a></li>
+<li><a class="link-light" href="gallery.html">Gallery</a></li>
+<li><a class="link-light" href="about.html">About</a></li>
+<li><a class="link-light" href="faq.html">FAQ</a></li>
+<li><a class="link-light" href="feedback.html">Feedback</a></li>
+<li><a class="link-light" href="colophon.html">Colophon</a></li>
 </ul>
-</div></div>
+    </nav>
+  </div></div>
 </footer>
-<script crossorigin="anonymous" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script></body>
+<script crossorigin="anonymous" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" src="vendor/bootstrap/bootstrap.bundle.min.js"></script>
+</body>
 </html>

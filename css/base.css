@@ -27,6 +27,11 @@ h1, h2, h3, h4 {
   --bs-btn-hover-border-color: #e4ab1d;
 }
 .brand-logo { width: 8.25rem; height: 5.25rem; object-fit: contain; }
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 102;
+}
 .footer-logo { width: 5rem; height: 5rem; object-fit: contain; }
 .navbar .nav-link[aria-current="page"] {
   color: var(--brand-ink);
@@ -56,6 +61,45 @@ h1, h2, h3, h4 {
   color: var(--brand-ink);
 }
 .skip-link:focus { top: 1rem; }
-/* Local practice forms reveal their existing result when the URL targets it. */
+/* Native form submission targets a prebuilt result; future JS uses the same states. */
 .form-result { display: none; }
 .form-result:target { display: block; }
+.result-panel:target .form-result { display: block; }
+.result-panel:target .result-idle { display: none; }
+.faq-stepss {
+  margin: 0;
+  padding: 32px;
+  list-style: none;
+  border: 1px solid rgba(17, 17, 15, 0.2);
+  display: grid;
+  border-radius: 8px;
+}
+
+/* Keep the shared sticky header clear of linked headings and form results. */
+html { scroll-padding-top: 8rem; }
+[id] { scroll-margin-top: 8rem; }
+[class*="col-"] { min-width: 0; }
+.site-footer a, address, pre { overflow-wrap: anywhere; }
+pre { max-width: 100%; overflow-x: auto; }
+.faq-steps { padding-left: 0; display: grid; gap: 1rem; margin-top: 2rem; }
+a:focus-visible, button:focus-visible, input:focus-visible,
+select:focus-visible, textarea:focus-visible, [tabindex="-1"]:focus-visible {
+  outline: 3px solid var(--brand-gold);
+  outline-offset: 3px;
+}
+
+/* State hooks are shared by all four forms and future generated content. */
+.is-hidden { display: none !important; }
+.is-active { font-weight: 700; text-decoration: underline; }
+.is-selected { border-color: var(--brand-gold) !important; box-shadow: 0 0 0 2px var(--brand-gold); }
+.is-error { color: #842029; background: #f8d7da; border: 1px solid #842029; border-radius: .375rem; }
+.is-success { color: #0f5132; background: #d1e7dd; border: 1px solid #0f5132; border-radius: .375rem; }
+.field-error { color: #842029; display: block; margin-top: .375rem; }
+.form-control.is-error, .form-select.is-error { background-color: white; border-color: #842029; }
+.cascade-demo { letter-spacing: .28em; }
+
+@media (max-width: 575.98px) {
+  .brand-logo { width: 6.5rem; height: 4rem; }
+  .navbar .nav-link { padding-block: .6rem; }
+  .faq-stepss { padding: 1.25rem; }
+}

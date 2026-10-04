@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1" name="viewport"/>
-<meta content="Student website about Istanbul Restaurant, Turkish cuisine, menu highlights and visitor information in Astana." name="description"/>
-<meta content="Sanzhar, Jasulan and Madi" name="author"/>
-<title>Istanbul Restaurant — Turkish Taste in Astana</title><!-- Bootstrap 5.3.8 via CDN; local correction layer follows. --><link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" rel="stylesheet"/>
-<link href="css/base.css" rel="stylesheet"/>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1" name="viewport">
+<meta content="Student website about Istanbul Restaurant, Turkish cuisine, menu highlights and visitor information in Astana." name="description">
+<meta content="Sanzhar, Jasulan and Madi" name="author">
+<title>Home — Istanbul Restaurant Astana</title>
+<!-- Pinned Bootstrap 5.3.8; local correction layer follows. --><link crossorigin="anonymous" href="vendor/bootstrap/bootstrap.min.css" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" rel="stylesheet">
+<link href="css/base.css" rel="stylesheet">
+<link rel="icon" type="image/jpeg" href="images/istanbul-logo.jpg">
 </head>
 <body class="home-page">
 <!-- Authors: Sanzhar, Jasulan and Madi. The home page is shared team work. -->
@@ -15,9 +16,9 @@
 <header class="site-header bg-body border-bottom">
 <div class="container">
 <nav aria-label="Main navigation" class="navbar navbar-expand-lg w-100" data-bs-theme="light"><a aria-label="Istanbul Restaurant home" class="navbar-brand me-auto" href="index.html">
-<img alt="Istanbul Turkish Taste logo" class="brand-logo" src="images/istanbul-logo.jpg"/>
-</a><button aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#mainNavbar" data-bs-toggle="collapse" type="button"><span class="navbar-toggler-icon"></span></button>
-<div class="collapse navbar-collapse justify-content-lg-end" id="mainNavbar"><ul class="navbar-nav gap-lg-2 mb-2 mb-lg-0">
+<img alt="Istanbul Turkish Taste logo" class="brand-logo" src="images/istanbul-logo.jpg">
+</a><button aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#main-navbar" data-bs-toggle="collapse" type="button" id="navigation-toggle"><span class="navbar-toggler-icon"></span></button>
+<div class="collapse navbar-collapse justify-content-lg-end" id="main-navbar"><ul class="navbar-nav gap-lg-2 mb-2 mb-lg-0" id="navigation-links">
 <li class="nav-item"><a aria-current="page" class="nav-link active" href="index.html">Home</a></li>
 <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
 <li class="nav-item"><a class="nav-link" href="visit.html">Visit</a></li>
@@ -25,7 +26,6 @@
 <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
 <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
 <li class="nav-item"><a class="nav-link" href="feedback.html">Feedback</a></li>
-<li class="nav-item d-none"><a class="nav-link" href="colophon.html">Colophon</a></li>
 </ul></div>
 </nav>
 </div>
@@ -33,8 +33,9 @@
 <main id="main-content">
 <!-- A section is used because the hero introduces one distinct topic with its own heading. -->
 <section aria-labelledby="home-title" class="home-hero container-fluid px-0 bg-dark text-white position-relative d-flex align-items-end min-vh-100"><!-- container-fluid keeps the hero image full width; inner container keeps text readable. -->
-<img alt="Istanbul Restaurant exterior and flower-covered terrace entrance at night" class="w-100 h-100 hero-image object-fit-cover position-absolute top-0 start-0" src="images/restaurant-exterior-front.jpg"/>
-<div class="container py-5 position-relative z-1"><!-- container limits line length here; Bootstrap gutters handle its spacing. -->
+<img alt="Istanbul Restaurant exterior and flower-covered terrace entrance at night" class="w-100 h-100 hero-image object-fit-cover position-absolute top-0 start-0" src="images/restaurant-exterior-front.jpg" decoding="async">
+<div class="container py-5 position-relative z-1">
+<!-- container limits line length here; Bootstrap gutters handle its spacing. -->
 <p class="small fw-bold text-uppercase text-brand-accent mb-3">Istanbul · Astana</p>
 <h1 class="display-2 mb-4 text-center text-md-start" id="home-title">Turkish taste in Astana</h1>
 <p class="lead text-white">
@@ -44,7 +45,7 @@
 <a class="btn btn-warning btn-lg" href="menu.html">View menu</a>
 <a class="fw-semibold text-decoration-underline link-light" href="visit.html">Plan a visit →</a>
 </p>
-<section aria-label="Restaurant location and hours" class="d-none d-md-flex flex-wrap gap-4 border-top pt-3 mt-4">
+<section aria-label="Restaurant location and hours" class="d-flex flex-wrap gap-3 border-top pt-3 mt-4">
 <span>Prospekt Uly Dala 56</span>
 <span>Daily 08:00—02:00</span>
 <span>+7 702 100 62 88</span>
@@ -63,20 +64,28 @@
               </p>
 </div>
 <div class="facts-photo col-12 col-lg-6">
-<img alt="Illuminated Istanbul flame sign beside red flowers" class="img-fluid w-100 rounded" src="images/restaurant-sign-detail.jpg"/>
+<img alt="Illuminated Istanbul flame sign beside red flowers" class="img-fluid w-100 rounded" src="images/restaurant-sign-detail.jpg" decoding="async">
 </div>
 </div>
 <section aria-label="Restaurant facts" class="facts-grid row g-3 mt-4">
-<div class="col-12 col-sm-6 col-lg-3 p-3 border shadow-sm"><strong class="d-block h3">4.7</strong><span class="small text-uppercase text-body-secondary">Rating</span></div>
-<div class="col-12 col-sm-6 col-lg-3 p-3 border shadow-sm"><strong class="d-block h3">08:00—02:00</strong><span class="small text-uppercase text-body-secondary">Daily</span></div>
-<div class="col-12 col-sm-6 col-lg-3 p-3 border shadow-sm"><strong class="d-block h3">≈ 5,000 ₸</strong><span class="small text-uppercase text-body-secondary">Average cheque</span></div>
-<div class="col-12 col-sm-6 col-lg-3 p-3 border shadow-sm"><strong class="d-block h3">Uly Dala 56</strong><span class="small text-uppercase text-body-secondary">Astana</span></div>
+<div class="col-12 col-sm-6 col-lg-3 p-3 border shadow-sm">
+<strong class="d-block h3">4.7</strong><span class="small text-uppercase text-body-secondary">Rating</span>
+</div>
+<div class="col-12 col-sm-6 col-lg-3 p-3 border shadow-sm">
+<strong class="d-block h3">08:00—02:00</strong><span class="small text-uppercase text-body-secondary">Daily</span>
+</div>
+<div class="col-12 col-sm-6 col-lg-3 p-3 border shadow-sm">
+<strong class="d-block h3">≈ 5,000 ₸</strong><span class="small text-uppercase text-body-secondary">Average cheque</span>
+</div>
+<div class="col-12 col-sm-6 col-lg-3 p-3 border shadow-sm">
+<strong class="d-block h3">Uly Dala 56</strong><span class="small text-uppercase text-body-secondary">Astana</span>
+</div>
 </section>
 </div>
 </section>
 <section aria-labelledby="menu-preview-title" class="menu-preview container-fluid px-0 row g-0 bg-dark text-white">
 <div class="menu-preview-media col-12 col-lg-6">
-<img alt="Prepared tables inside Istanbul Restaurant beneath red floral decoration" class="img-fluid w-100 h-100 object-fit-cover" src="images/restaurant-interior-table.jpg"/>
+<img alt="Prepared tables inside Istanbul Restaurant beneath red floral decoration" class="img-fluid w-100 h-100 object-fit-cover" src="images/restaurant-interior-table.jpg" decoding="async">
 </div>
 <div class="menu-preview-copy col-12 col-lg-6 p-4 p-md-5">
 <p class="small fw-bold text-uppercase text-brand-accent mb-3">From Istanbul to Astana</p>
@@ -88,7 +97,7 @@
 <li class="py-2 border-bottom">Künefe</li>
 <li class="py-2 border-bottom">Rotating specials</li>
 </ul>
-<p class="small text-white-50">Ask the restaurant for today's availability and prices.</p>
+<p class="small text-light">Ask the restaurant for today's availability and prices.</p>
 <p class="d-flex flex-wrap align-items-center gap-2 mt-4"><a class="btn btn-warning" href="menu.html">Explore the menu</a></p>
 </div>
 </section>
@@ -103,15 +112,15 @@
 </div>
 <div class="atmosphere-grid row g-3">
 <figure class="col-12 col-md-4 mb-0">
-<div class="ratio ratio-4x3 overflow-hidden rounded"><img alt="Dining room viewed through black window frames" class="img-fluid w-100 h-100 object-fit-cover" src="images/restaurant-dining-room.jpg"/></div>
+<div class="ratio ratio-4x3 overflow-hidden rounded"><img alt="Dining room viewed through black window frames" class="img-fluid w-100 h-100 object-fit-cover" src="images/restaurant-dining-room.jpg" decoding="async"></div>
 <figcaption class="small mt-2">Dining room</figcaption>
 </figure>
 <figure class="col-12 col-md-4 mb-0">
-<div class="ratio ratio-4x3 overflow-hidden rounded"><img alt="Flower-lined covered entrance with warm bulbs" class="img-fluid w-100 h-100 object-fit-cover" src="images/restaurant-entrance.jpg"/></div>
+<div class="ratio ratio-4x3 overflow-hidden rounded"><img alt="Flower-lined covered entrance with warm bulbs" class="img-fluid w-100 h-100 object-fit-cover" src="images/restaurant-entrance.jpg" decoding="async"></div>
 <figcaption class="small mt-2">Terrace</figcaption>
 </figure>
 <figure class="col-12 col-md-4 mb-0">
-<div class="ratio ratio-4x3 overflow-hidden rounded"><img alt="Restaurant window reflecting the illuminated flame logo" class="img-fluid w-100 h-100 object-fit-cover" src="images/restaurant-window-logo.jpg"/></div>
+<div class="ratio ratio-4x3 overflow-hidden rounded"><img alt="Restaurant window reflecting the illuminated flame logo" class="img-fluid w-100 h-100 object-fit-cover" src="images/restaurant-window-logo.jpg" decoding="async"></div>
 <figcaption class="small mt-2">Evening</figcaption>
 </figure>
 </div>
@@ -124,31 +133,34 @@
 <p class="small fw-bold text-uppercase text-brand-accent mb-3">What guests mention</p>
 <h2 class="display-5 mb-4" id="reviews-title">Good food. Warm room.</h2>
 </div>
-<p class="rating">
-<span aria-hidden="true" class="rating-stars">★★★★☆</span> 4.7 · 1,811 ratings
-            </p>
+<p class="rating">4.7 · Guest rating on 2GIS</p>
 </div>
-<div class="review-wall row g-3">
+<div class="review-wall row g-3" id="guest-reviews">
 <blockquote class="col-12 col-lg-6 bg-body-tertiary border p-4 mb-0">
 <p>“Everything was tasty and arrived on time.”</p>
 <footer>— <cite>Kamilla Khairullina</cite></footer>
 </blockquote>
 <div class="col-12 col-lg-6">
-<div class="row g-3"><blockquote class="col-12 col-md-6 col-lg-12 bg-body-tertiary border p-4 mb-0">
+<div class="row g-3">
+<blockquote class="col-12 col-md-6 col-lg-12 bg-body-tertiary border p-4 mb-0">
 <p>“Large portions and very tasty dishes.”</p>
 <footer>— <cite>Dasha Agafonova</cite></footer>
-</blockquote><blockquote class="col-12 col-md-6 col-lg-12 bg-body-tertiary border p-4 mb-0">
+</blockquote>
+<blockquote class="col-12 col-md-6 col-lg-12 bg-body-tertiary border p-4 mb-0">
 <p>“An atmospheric place with friendly staff.”</p>
 <footer>— <cite>Vasilek Nam</cite></footer>
-</blockquote></div></div>
+</blockquote>
 </div>
+</div>
+</div>
+<div id="generated-reviews" aria-live="polite"></div>
 <p class="d-flex flex-wrap align-items-center gap-2 mt-4">
 <a class="btn btn-outline-dark" href="https://2gis.kz/astana/firm/70000001069922617/tab/reviews" rel="noopener noreferrer" target="_blank">More reviews</a>
 </p>
 </div>
 </section>
 <section aria-labelledby="visit-cta-title" class="visit-cta bg-dark text-white">
-<img alt="Wide night view of Istanbul Restaurant on Uly Dala Avenue" class="img-fluid w-100 cta-image object-fit-cover" src="images/restaurant-exterior-wide.jpg"/>
+<img alt="Wide night view of Istanbul Restaurant on Uly Dala Avenue" class="img-fluid w-100 cta-image object-fit-cover" src="images/restaurant-exterior-wide.jpg" decoding="async">
 <div class="container py-5"><div class="row g-4">
 <div class="col-12 col-lg-6">
 <p class="small fw-bold text-uppercase text-brand-accent mb-3">Your table in Astana</p>
@@ -156,9 +168,15 @@
 </div>
 <aside aria-label="Visit details" class="col-12 col-lg-6 bg-body text-dark p-4 shadow">
 <ul class="list-group list-group-flush">
-<li class="list-group-item d-flex justify-content-between gap-3"><strong>Address</strong><span>Prospekt Uly Dala 56</span></li>
-<li class="list-group-item d-flex justify-content-between gap-3"><strong>Hours</strong><span>Daily 08:00—02:00</span></li>
-<li class="list-group-item d-flex justify-content-between gap-3"><strong>Phone</strong><a href="tel:+77021006288">+7 702 100 62 88</a></li>
+<li class="list-group-item d-flex justify-content-between gap-3">
+<strong>Address</strong><span>Prospekt Uly Dala 56</span>
+</li>
+<li class="list-group-item d-flex justify-content-between gap-3">
+<strong>Hours</strong><span>Daily 08:00—02:00</span>
+</li>
+<li class="list-group-item d-flex justify-content-between gap-3">
+<strong>Phone</strong><a href="tel:+77021006288">+7 702 100 62 88</a>
+</li>
 </ul>
 <p class="d-flex flex-wrap align-items-center gap-2 mt-4">
 <a class="btn btn-warning" href="https://2gis.kz/astana/firm/70000001069922617" rel="noopener noreferrer" target="_blank">Open map</a>
@@ -169,18 +187,25 @@
 </section>
 </main>
 <footer class="site-footer bg-dark text-white">
-<div class="footer-inner container py-4"><div class="row g-4 align-items-center">
-<div class="footer-brand col-12 col-md-6 d-flex align-items-center gap-3">
-<img alt="" class="footer-logo" src="images/istanbul-logo.jpg"/>
-<small>Istanbul · Uly Dala 56<br/><a class="link-light" href="tel:+77021006288">+7 702 100 62 88</a><br/>© 2026 Sanzhar, Jasulan and Madi</small>
-</div>
-<ul class="footer-links col-12 col-md-6 d-flex flex-wrap justify-content-md-end gap-3 list-unstyled mb-0">
+  <div class="container py-4"><div class="row g-4 align-items-center">
+    <div class="col-12 col-lg-5 d-flex align-items-center gap-3">
+      <img alt="" class="footer-logo" src="images/istanbul-logo.jpg">
+      <small>Istanbul · Uly Dala 56<br><a class="link-light" href="tel:+77021006288">+7 702 100 62 88</a><br>© 2026 Sanzhar, Jasulan and Madi</small>
+    </div>
+    <nav class="col-12 col-lg-7" aria-label="Footer navigation">
+      <ul class="d-flex flex-wrap justify-content-lg-end gap-3 list-unstyled mb-0">
+<li><a class="link-light" href="index.html">Home</a></li>
 <li><a class="link-light" href="menu.html">Menu</a></li>
 <li><a class="link-light" href="visit.html">Visit</a></li>
 <li><a class="link-light" href="gallery.html">Gallery</a></li>
-<li class="d-none"><a class="link-light" href="colophon.html">Colophon</a></li>
+<li><a class="link-light" href="about.html">About</a></li>
+<li><a class="link-light" href="faq.html">FAQ</a></li>
+<li><a class="link-light" href="feedback.html">Feedback</a></li>
+<li><a class="link-light" href="colophon.html">Colophon</a></li>
 </ul>
-</div></div>
+    </nav>
+  </div></div>
 </footer>
-<script crossorigin="anonymous" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script></body>
+<script crossorigin="anonymous" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" src="vendor/bootstrap/bootstrap.bundle.min.js"></script>
+</body>
 </html>

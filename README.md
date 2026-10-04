@@ -2,47 +2,123 @@
 
 ![Istanbul Restaurant in Astana](images/restaurant-exterior-wide.jpg)
 
-A static website about **Istanbul Turkish Taste**, a Turkish restaurant in Astana. The project was created by Sanzhar, Jasulan and Madi for the Introduction to Web Technologies course.
+An eight-page website about **Istanbul Turkish Taste**, Uly Dala Avenue 56, Astana. Sanzhar, Jasulan and Madi continue the same Introduction to Web Technologies project for the midterm.
 
-## Team
+## Pages and team
 
-| Student | Main pages |
+| Page | Purpose | Main owner |
+| --- | --- | --- |
+| `index.html` | Restaurant introduction, hours, guest reviews and next steps | Shared |
+| `menu.html` | 18 published menu prices, dish/portion selection and meal planning | Sanzhar |
+| `visit.html` | Address, hours, directions, contacts and visit preparation | Jasulan |
+| `gallery.html` | Existing restaurant photographs with captions and alt text | Jasulan |
+| `about.html` | Restaurant information, services and identity | Madi |
+| `faq.html` | Visitor answers and question preparation | Madi |
+| `feedback.html` | Review guidance and review preparation | Sanzhar |
+| `colophon.html` | Team responsibilities and explanation of the site | Shared |
+
+Every page has the same navigation and footer. The header has seven visitor-page links; Colophon remains available from the footer on every page. Titles follow `Page — Istanbul Restaurant Astana`.
+
+## Three visitor journeys
+
+### 1. Find the address and opening hours
+
+- **Start:** Home.
+- **Steps:** open Visit from navigation; choose **See address**; read the restaurant details table.
+- **End:** find Uly Dala Avenue 56, daily hours 08:00–02:00 and the phone number. The map link is optional; no booking or staff approval is required to complete this journey.
+
+### 2. Compare dishes and prepare a visit
+
+- **Start:** Menu.
+- **Steps:** compare Turkish menemen (1,900 ₸) and gözleme (2,400 ₸); choose **Plan a meal**; select a dish and portions; choose **Check meal choices**; read the result; choose **Plan your visit**; complete the visit details and acknowledgment; choose **Check visit details**.
+- **End:** the visit result confirms that the required fields passed browser checks, explains that no reservation was made, and offers **Review address and hours** or **Start again**. One visitor completes this path alone. Calling for a reservation is optional and outside this preparation journey.
+- **Current boundary:** meal selection and confirmation are built; automatic subtotal calculation is reserved for the JavaScript assignments. The output starts at “No estimate yet” and never claims a calculated amount. Submitted values are not retained in the form after navigation.
+
+### 3. Learn about the restaurant and prepare a question
+
+- **Start:** About.
+- **Steps:** read the restaurant information; choose **Prepare a question**; read the FAQ; complete the question form and acknowledgment; choose **Check question**.
+- **End:** the question result explains that the required entries were checked and the question was not sent or saved. The visitor can return to the answers or start again. Opening WhatsApp is optional and outside the completed local journey.
+
+Feedback also has a complete preparation flow: required fields → **Check review** → visible result → recovery or optional public-review link.
+
+## Form behavior at the midterm
+
+There is no custom website JavaScript, server or database. Native HTML validation checks required fields, email format and number ranges. Each GET form targets an existing result section; CSS `:target` reveals its prepared confirmation. Form values appear in the browser URL during submission; no application stores them or sends them to the restaurant. The static result is not a receipt, reservation or published review, and does not reproduce or retain entered values. The interface states these boundaries before submission and in the result.
+
+Future JavaScript will calculate the subtotal, populate the prepared summary/error containers, preserve values locally where appropriate and toggle existing state classes. No staff accounts, approval chains or pretend restaurant backend are included.
+
+## JavaScript-ready markup
+
+| Surface | Existing hooks |
 | --- | --- |
-| Sanzhar | Menu and Feedback |
-| Jasulan | Visit and Gallery |
-| Madi | About and FAQ |
+| Navigation | `navigation-toggle`, `main-navbar`, `navigation-links` |
+| Menu | `menu-items`, `generated-menu-items`, `dish-*`, `category-*`, `menu-meal-form`, `menu-dish`, `menu-quantity`, `menu-total` |
+| Visit | `visit-plan-form`, `visit-*` inputs, `visit-form-result` |
+| Question | `faq-question-form`, `faq-*` inputs, `question-result`, `faq-items`, `generated-faq-items` |
+| Review | `feedback-review-form`, `feedback-*` inputs, `feedback-result` |
+| Generated content | `generated-gallery-items`, `gallery-empty`, `guest-reviews`, `generated-reviews` |
+| Every form | `<page>-submit`, `<page>-reset`, `<page>-errors`, `<page>-summary`, `<page>-confirmation`, per-field `<input-id>-error` containers |
 
-The home page and Colophon were prepared together.
+Ids use English lowercase kebab-case. Shared states are `.is-hidden`, `.is-active`, `.is-selected`, `.is-error`, `.is-success`, `.field-error` and the result-panel states. Error containers have `role="alert"`; results have `role="status"`; generated confirmations have `aria-live="polite"`. Inputs have real labels. The existing local `.faq-stepss` styling and sticky header are retained.
 
-## Pages
+## Stack and opening the site
 
-- `index.html` — home page, restaurant highlights and reviews.
-- `menu.html` — menu categories and Turkish dishes.
-- `visit.html` — address, opening hours and visit form.
-- `gallery.html` — restaurant exterior and interior photographs.
-- `about.html` — restaurant information and available services.
-- `faq.html` — common visitor questions and contact form.
-- `feedback.html` — visitor feedback form.
-- `colophon.html` — team roles and a simple project explanation.
+- Semantic HTML5 and native browser validation.
+- Bootstrap **5.3.8**, locally pinned in `vendor/bootstrap/`; original CSS and bundle SRI hashes verified. Bootstrap supplies responsive grid, utilities, controls and mobile menu behavior.
+- `css/base.css`: a small shared correction layer for palette, fonts, images, focus, sticky header and prepared states.
+- Existing local JPG photographs in `images/`; no new stock or generated images.
+- No build step or custom runtime scripts. Files under `tools/` are developer checks and never loaded by a page.
 
-## Technologies
+Open `index.html` directly, or start a local server from this directory:
 
-- HTML5 semantic elements
-- CSS3 selectors, Flexbox and Grid
-- Local JPG images
-- No JavaScript, frameworks or build tools
+```powershell
+python -m http.server 4173 --bind 127.0.0.1
+```
 
-Shared styles are stored in `css/base.css`. Each student also has a separate stylesheet: `css/sanzhar.css`, `css/jasulan.css` and `css/madi.css`.
+Then visit `http://127.0.0.1:4173/index.html`. Bootstrap assets and images load locally.
 
-## How to open
+## Checks and evidence
 
-1. Download or clone the repository.
-2. Open `index.html` in a browser.
+- [Quality pass and remaining team work](docs/quality-pass.md)
+- [Content sources and limitations](docs/content-sources.md)
+- [Phone/desktop screenshots](docs/screenshots/README.md)
+- [Browser evidence](docs/checks/browser.json)
+- [Official Nu validation evidence](docs/checks/w3c.json)
 
-## Restaurant information
+Repeat the source audit with Python and the already available `lxml` package:
 
-- **Address:** Uly Dala Avenue 56, Astana
-- **Phone:** +7 702 100 62 88
-- **Instagram:** [@istanbul.turkishtaste](https://www.instagram.com/istanbul.turkishtaste/)
-- **2GIS:** [Istanbul Restaurant](https://2gis.kz/astana/firm/70000001069922617)
+```powershell
+python tools/check_site.py
+```
+
+Use the official [Nu Html Checker release](https://github.com/validator/validator/releases/tag/latest) and Java 17+ to validate locally, without uploading HTML:
+
+```powershell
+python tools/check_w3c.py C:\path\to\vnu.jar
+```
+
+Browser checks use an already installed Playwright module and Chrome. Point `SITE_PLAYWRIGHT_MODULE` to the installed module if it is outside Node's search path, and `SITE_CHROME` to Chrome if needed. With the server running:
+
+```powershell
+node tools/check_browser.cjs
+```
+
+## Submission and structure freeze
+
+The team must complete cross-review at least two days before the actual deadline, confirm content and photograph ownership, and commit from each member's own account on at least four different days. Technical checks do not replace team review. No deadline was supplied and the required histories have not been certified.
+
+After all findings are fixed and the team approves the final structure, create the final commit and tag it:
+
+```powershell
+git add .
+git commit -m "Finish midterm HTML and CSS"
+git tag -a midterm -m "Freeze midterm HTML and CSS"
+git push feruum master:main
+git push feruum midterm
+```
+
+The tag has deliberately **not** been created during preparation. After `midterm`, new elements and styles must be produced through JavaScript under the assignment's freeze rule. Before pushing, review the diff and remote branch; this checkout is `master` tracking `feruum/main`.
+
+At defense, each member should explain a page they did not write, the prepared hooks/states, semantic elements, validation and Bootstrap layout choices.
 

@@ -1,0 +1,388 @@
+{
+  "testedAt": "2026-10-04T09:34:15.659Z",
+  "origin": "http://127.0.0.1:4173",
+  "pages": [
+    {
+      "name": "index",
+      "mode": "desktop",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "width": 1440,
+      "scrollWidth": 1440,
+      "brokenImages": [],
+      "bootstrap": "1320px",
+      "sticky": "sticky",
+      "errors": []
+    },
+    {
+      "name": "menu",
+      "mode": "desktop",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "width": 1440,
+      "scrollWidth": 1440,
+      "brokenImages": [],
+      "bootstrap": "1320px",
+      "sticky": "sticky",
+      "errors": []
+    },
+    {
+      "name": "visit",
+      "mode": "desktop",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "width": 1440,
+      "scrollWidth": 1440,
+      "brokenImages": [],
+      "bootstrap": "1320px",
+      "sticky": "sticky",
+      "errors": []
+    },
+    {
+      "name": "gallery",
+      "mode": "desktop",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "width": 1440,
+      "scrollWidth": 1440,
+      "brokenImages": [],
+      "bootstrap": "1320px",
+      "sticky": "sticky",
+      "errors": []
+    },
+    {
+      "name": "about",
+      "mode": "desktop",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "width": 1440,
+      "scrollWidth": 1440,
+      "brokenImages": [],
+      "bootstrap": "1320px",
+      "sticky": "sticky",
+      "errors": []
+    },
+    {
+      "name": "faq",
+      "mode": "desktop",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "width": 1440,
+      "scrollWidth": 1440,
+      "brokenImages": [],
+      "bootstrap": "1320px",
+      "sticky": "sticky",
+      "errors": []
+    },
+    {
+      "name": "feedback",
+      "mode": "desktop",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "width": 1440,
+      "scrollWidth": 1440,
+      "brokenImages": [],
+      "bootstrap": "1320px",
+      "sticky": "sticky",
+      "errors": []
+    },
+    {
+      "name": "colophon",
+      "mode": "desktop",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "width": 1440,
+      "scrollWidth": 1440,
+      "brokenImages": [],
+      "bootstrap": "1320px",
+      "sticky": "sticky",
+      "errors": []
+    },
+    {
+      "name": "index",
+      "mode": "phone",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "width": 390,
+      "scrollWidth": 390,
+      "brokenImages": [],
+      "bootstrap": "none",
+      "sticky": "sticky",
+      "errors": []
+    },
+    {
+      "name": "menu",
+      "mode": "phone",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "width": 390,
+      "scrollWidth": 390,
+      "brokenImages": [],
+      "bootstrap": "none",
+      "sticky": "sticky",
+      "errors": []
+    },
+    {
+      "name": "visit",
+      "mode": "phone",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "width": 390,
+      "scrollWidth": 390,
+      "brokenImages": [],
+      "bootstrap": "none",
+      "sticky": "sticky",
+      "errors": []
+    },
+    {
+      "name": "gallery",
+      "mode": "phone",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "width": 390,
+      "scrollWidth": 390,
+      "brokenImages": [],
+      "bootstrap": "none",
+      "sticky": "sticky",
+      "errors": []
+    },
+    {
+      "name": "about",
+      "mode": "phone",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "width": 390,
+      "scrollWidth": 390,
+      "brokenImages": [],
+      "bootstrap": "none",
+      "sticky": "sticky",
+      "errors": []
+    },
+    {
+      "name": "faq",
+      "mode": "phone",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "width": 390,
+      "scrollWidth": 390,
+      "brokenImages": [],
+      "bootstrap": "none",
+      "sticky": "sticky",
+      "errors": []
+    },
+    {
+      "name": "feedback",
+      "mode": "phone",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "width": 390,
+      "scrollWidth": 390,
+      "brokenImages": [],
+      "bootstrap": "none",
+      "sticky": "sticky",
+      "errors": []
+    },
+    {
+      "name": "colophon",
+      "mode": "phone",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "width": 390,
+      "scrollWidth": 390,
+      "brokenImages": [],
+      "bootstrap": "none",
+      "sticky": "sticky",
+      "errors": []
+    },
+    {
+      "name": "index",
+      "mode": "narrow",
+      "viewport": {
+        "width": 320,
+        "height": 740
+      },
+      "width": 320,
+      "scrollWidth": 320,
+      "brokenImages": [],
+      "bootstrap": "none",
+      "sticky": "sticky",
+      "errors": []
+    },
+    {
+      "name": "menu",
+      "mode": "narrow",
+      "viewport": {
+        "width": 320,
+        "height": 740
+      },
+      "width": 320,
+      "scrollWidth": 320,
+      "brokenImages": [],
+      "bootstrap": "none",
+      "sticky": "sticky",
+      "errors": []
+    },
+    {
+      "name": "visit",
+      "mode": "narrow",
+      "viewport": {
+        "width": 320,
+        "height": 740
+      },
+      "width": 320,
+      "scrollWidth": 320,
+      "brokenImages": [],
+      "bootstrap": "none",
+      "sticky": "sticky",
+      "errors": []
+    },
+    {
+      "name": "gallery",
+      "mode": "narrow",
+      "viewport": {
+        "width": 320,
+        "height": 740
+      },
+      "width": 320,
+      "scrollWidth": 320,
+      "brokenImages": [],
+      "bootstrap": "none",
+      "sticky": "sticky",
+      "errors": []
+    },
+    {
+      "name": "about",
+      "mode": "narrow",
+      "viewport": {
+        "width": 320,
+        "height": 740
+      },
+      "width": 320,
+      "scrollWidth": 320,
+      "brokenImages": [],
+      "bootstrap": "none",
+      "sticky": "sticky",
+      "errors": []
+    },
+    {
+      "name": "faq",
+      "mode": "narrow",
+      "viewport": {
+        "width": 320,
+        "height": 740
+      },
+      "width": 320,
+      "scrollWidth": 320,
+      "brokenImages": [],
+      "bootstrap": "none",
+      "sticky": "sticky",
+      "errors": []
+    },
+    {
+      "name": "feedback",
+      "mode": "narrow",
+      "viewport": {
+        "width": 320,
+        "height": 740
+      },
+      "width": 320,
+      "scrollWidth": 320,
+      "brokenImages": [],
+      "bootstrap": "none",
+      "sticky": "sticky",
+      "errors": []
+    },
+    {
+      "name": "colophon",
+      "mode": "narrow",
+      "viewport": {
+        "width": 320,
+        "height": 740
+      },
+      "width": 320,
+      "scrollWidth": 320,
+      "brokenImages": [],
+      "bootstrap": "none",
+      "sticky": "sticky",
+      "errors": []
+    }
+  ],
+  "flows": [
+    {
+      "name": "find-address-and-hours",
+      "result": "pass"
+    },
+    {
+      "name": "menu-validation-result-recovery",
+      "result": "pass"
+    },
+    {
+      "name": "visit-validation-result-recovery",
+      "result": "pass"
+    },
+    {
+      "name": "faq-validation-result-recovery",
+      "result": "pass"
+    },
+    {
+      "name": "feedback-validation-result-recovery",
+      "result": "pass"
+    },
+    {
+      "name": "compare-meal-and-plan-visit-end-to-end",
+      "result": "pass"
+    },
+    {
+      "name": "about-faq-question-end-to-end",
+      "result": "pass"
+    },
+    {
+      "name": "reset-and-keyboard-skip-link",
+      "result": "pass"
+    }
+  ],
+  "errors": [],
+  "sourceHashes": {
+    "index.html": "2a43df101046b6d5f36c1ca42cc95e705e39e6489a93f853ed0db92e3c7e2951",
+    "menu.html": "341a7f41cabc088b89f9179ccdedc65ed887c989ec2ad5f304b0e1d2966bde9b",
+    "visit.html": "116d6f4f71bd3891f0d76db227b1e8a6d1c7f3160ce5459a777b0caee94f9d7d",
+    "gallery.html": "0c24820744d366d1fff173120a1d55b2076204aebbe32419dfecfe64e32e7aa5",
+    "about.html": "4f75bd0611f799e6e7928368172295d40b99b48f9fde971e1df1dba4cf00ed32",
+    "faq.html": "97bade9e5491f0a7aaac5a5c0809e41e826e4c5bd685e7dc92dfee6f2436151c",
+    "feedback.html": "99840fbe537f07b51d08249aa4fff40d631ddb0201515a73d2b8206a021baa7b",
+    "colophon.html": "8e233ef5d551eed0627e6f2debf20439e8b1dae2ff5d0058b6b0c6f85e8c0f5a",
+    "css/base.css": "e4da99ab4ec601694c2feb7404ed791752e5f56d296fd9463da12f1e2ed372e7"
+  }
+}

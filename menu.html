@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1" name="viewport"/>
-<meta content="Menu categories and Turkish dish highlights at Istanbul Restaurant in Astana." name="description"/>
-<meta content="Sanzhar" name="author"/>
-<title>Menu — Istanbul Restaurant Astana</title><!-- Bootstrap 5.3.8 via CDN; local correction layer follows. --><link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" rel="stylesheet"/>
-<link href="css/base.css" rel="stylesheet"/>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1" name="viewport">
+<meta content="Menu categories and Turkish dish highlights at Istanbul Restaurant in Astana." name="description">
+<meta content="Sanzhar" name="author">
+<title>Menu — Istanbul Restaurant Astana</title>
+<!-- Pinned Bootstrap 5.3.8; local correction layer follows. --><link crossorigin="anonymous" href="vendor/bootstrap/bootstrap.min.css" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" rel="stylesheet">
+<link href="css/base.css" rel="stylesheet">
+<link rel="icon" type="image/jpeg" href="images/istanbul-logo.jpg">
 </head>
 <body class="menu-page">
 <!-- Author: Sanzhar. -->
@@ -15,9 +16,9 @@
 <header class="site-header bg-body border-bottom">
 <div class="container">
 <nav aria-label="Main navigation" class="navbar navbar-expand-lg w-100" data-bs-theme="light"><a aria-label="Istanbul Restaurant home" class="navbar-brand me-auto" href="index.html">
-<img alt="Istanbul Turkish Taste logo" class="brand-logo" src="images/istanbul-logo.jpg"/>
-</a><button aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#mainNavbar" data-bs-toggle="collapse" type="button"><span class="navbar-toggler-icon"></span></button>
-<div class="collapse navbar-collapse justify-content-lg-end" id="mainNavbar"><ul class="navbar-nav gap-lg-2 mb-2 mb-lg-0">
+<img alt="Istanbul Turkish Taste logo" class="brand-logo" src="images/istanbul-logo.jpg">
+</a><button aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#main-navbar" data-bs-toggle="collapse" type="button" id="navigation-toggle"><span class="navbar-toggler-icon"></span></button>
+<div class="collapse navbar-collapse justify-content-lg-end" id="main-navbar"><ul class="navbar-nav gap-lg-2 mb-2 mb-lg-0" id="navigation-links">
 <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
 <li class="nav-item"><a aria-current="page" class="nav-link active" href="menu.html">Menu</a></li>
 <li class="nav-item"><a class="nav-link" href="visit.html">Visit</a></li>
@@ -25,7 +26,6 @@
 <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
 <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
 <li class="nav-item"><a class="nav-link" href="feedback.html">Feedback</a></li>
-<li class="nav-item d-none"><a class="nav-link" href="colophon.html">Colophon</a></li>
 </ul></div>
 </nav>
 </div>
@@ -33,129 +33,205 @@
 <main id="main-content">
 <!-- This section connects the menu introduction to its visible heading. -->
 <section aria-labelledby="menu-title" class="container-fluid px-0 border-bottom">
-<div class="row g-0 align-items-stretch"><div class="page-hero-copy col-12 col-lg-6 d-flex flex-column justify-content-center p-4 p-md-5">
+<div class="row g-0 align-items-stretch">
+<div class="page-hero-copy col-12 col-lg-6 d-flex flex-column justify-content-center p-4 p-md-5">
 <p class="small fw-bold text-uppercase text-brand-accent mb-3">Turkish kitchen</p>
 <h1 class="display-2 mb-4" id="menu-title">Menu highlights</h1>
 <p class="lead">
-            Breakfast, grill dishes, street food and Turkish sweets. Ask what is available today.
+            Breakfast, döner, hot dishes, pizza, salads and soups. Compare published prices and plan your meal.
           </p>
 <p class="d-flex flex-wrap align-items-center gap-2 mt-4">
 <a class="btn btn-warning" href="#categories">Browse categories</a>
 <a class="fw-semibold text-decoration-underline" href="#dish-question">Ask about a dish →</a>
-</p>
-</div><div class="page-hero-media col-12 col-lg-6 m-0">
-<img alt="Prepared dining table inside Istanbul Restaurant" class="img-fluid w-100 h-100 object-fit-cover" src="images/restaurant-interior-table.jpg"/>
-</div></div></section>
-<section aria-labelledby="categories-title" class="py-5" id="categories">
-<!-- This introduction separates verified price information from menu inspiration. -->
-<div class="menu-intro container"><div class="row g-4 align-items-end">
-<div class="col-12 col-lg-6">
-<p class="small fw-bold text-uppercase text-brand-accent mb-3">Before ordering</p>
-<h2 class="display-5 mb-4" id="categories-title">Explore the kitchen</h2>
+<a class="btn btn-outline-dark" href="#meal-planner">Plan a meal</a></p>
 </div>
-<p class="col-12 col-lg-6">
-            The average cheque is about <strong>5,000 ₸</strong>. Only the published price
-            below is exact; confirm all other prices.
-          </p>
-</div></div>
-<div class="menu-board container"><div class="row g-4"><!-- Bootstrap card component: adapted the documented card body to existing menu categories. -->
-<div class="col-12 col-md-6 col-lg-4"><article class="card h-100 shadow-sm">
-<p class="menu-group-number card-header small fw-bold text-brand-accent">01</p>
-<div class="card-body">
-<h3 class="h4 mb-3 card-title">Breakfast</h3>
-<ul class="dish-list list-unstyled mb-0">
-<li class="border-top py-2"><span><strong>Turkish breakfast</strong><small class="d-block text-body-secondary">Eggs, cheese and olives.</small></span><em aria-label="Ask for today’s price"></em></li>
-<li class="border-top py-2"><span><strong>Menemen</strong><small class="d-block text-body-secondary">Eggs, tomatoes and peppers.</small></span><em aria-label="Ask for today’s price"></em></li>
-<li class="border-top py-2"><span><strong>Gözleme</strong><small class="d-block text-body-secondary">Filled Turkish flatbread.</small></span><em aria-label="Ask for today’s price"></em></li>
+<div class="page-hero-media col-12 col-lg-6 m-0">
+<img alt="Prepared dining table inside Istanbul Restaurant" class="img-fluid w-100 h-100 object-fit-cover" src="images/restaurant-interior-table.jpg" decoding="async">
+</div>
+</div></section>
+<section aria-labelledby="categories-title" class="py-5" id="categories"><div class="container">
+<p class="small fw-bold text-uppercase text-brand-accent">Menu selection</p>
+<h2 class="display-5 mb-4" id="categories-title">Choose something for your visit</h2>
+<p id="menu-price-note">Prices in tenge from the published menu. Confirm today's prices, ingredients and availability with the restaurant before ordering. This page helps you plan a meal; it does not place an order.</p>
+<div class="row g-4" id="menu-items">
+<div class="col-12 col-md-6 col-lg-4"><article class="card h-100" id="category-breakfast"><div class="card-body">
+<p class="small text-brand-accent fw-bold">01</p>
+<h3 class="h4">Breakfast</h3>
+<ul class="list-unstyled mb-0">
+<li class="d-flex flex-wrap justify-content-between gap-2 border-top py-3" id="dish-menemen" data-price="1900">
+<span>Turkish menemen</span><strong class="text-nowrap">1,900 ₸</strong>
+</li>
+<li class="d-flex flex-wrap justify-content-between gap-2 border-top py-3" id="dish-gozleme" data-price="2400">
+<span>Gözleme</span><strong class="text-nowrap">2,400 ₸</strong>
+</li>
+<li class="d-flex flex-wrap justify-content-between gap-2 border-top py-3" id="dish-cheese-toast" data-price="1500">
+<span>Cheese toast</span><strong class="text-nowrap">1,500 ₸</strong>
+</li>
 </ul>
-</div>
-</article></div>
-<div class="col-12 col-md-6 col-lg-4"><article class="card h-100 shadow-sm">
-<p class="menu-group-number card-header small fw-bold text-brand-accent">02</p>
-<div class="card-body">
-<h3 class="h4 mb-3 card-title">From the grill</h3>
-<ul class="dish-list list-unstyled mb-0">
-<li class="border-top py-2"><span><strong>Döner</strong><small class="d-block text-body-secondary">Sliced grilled beef or chicken.</small></span><em aria-label="Ask for today’s price"></em></li>
-<li class="border-top py-2"><span><strong>Adana kebab</strong><small class="d-block text-body-secondary">Spiced grilled minced meat.</small></span><em aria-label="Ask for today’s price"></em></li>
-<li class="border-top py-2"><span><strong>Shashlik</strong><small class="d-block text-body-secondary">Charcoal-grilled meat skewers.</small></span><em aria-label="Ask for today’s price"></em></li>
+<a class="btn btn-outline-dark mt-3" href="#meal-planner">Plan a meal</a>
+</div></article></div>
+<div class="col-12 col-md-6 col-lg-4"><article class="card h-100" id="category-doner"><div class="card-body">
+<p class="small text-brand-accent fw-bold">02</p>
+<h3 class="h4">Döner</h3>
+<ul class="list-unstyled mb-0">
+<li class="d-flex flex-wrap justify-content-between gap-2 border-top py-3" id="dish-chicken-doner" data-price="2900">
+<span>Chicken döner on a plate</span><strong class="text-nowrap">2,900 ₸</strong>
+</li>
+<li class="d-flex flex-wrap justify-content-between gap-2 border-top py-3" id="dish-beef-wrap" data-price="2700">
+<span>Beef döner in lavash</span><strong class="text-nowrap">2,700 ₸</strong>
+</li>
+<li class="d-flex flex-wrap justify-content-between gap-2 border-top py-3" id="dish-chicken-iskender" data-price="3100">
+<span>Chicken Iskender kebab</span><strong class="text-nowrap">3,100 ₸</strong>
+</li>
 </ul>
-</div>
-</article></div>
-<div class="col-12 col-md-6 col-lg-4"><article class="card h-100 shadow-sm">
-<p class="menu-group-number card-header small fw-bold text-brand-accent">03</p>
-<div class="card-body">
-<h3 class="h4 mb-3 card-title">Street food</h3>
-<ul class="dish-list list-unstyled mb-0">
-<li class="border-top py-2"><span><strong>Balık ekmek</strong><small class="d-block text-body-secondary">Fried fish in bread.</small></span><em aria-label="Ask for today’s price"></em></li>
-<li class="border-top py-2"><span><strong>Kokoreç</strong><small class="d-block text-body-secondary">Seasoned, grilled offal.</small></span><em aria-label="Ask for today’s price"></em></li>
-<li class="border-top py-2"><span><strong>Şırdan</strong><small class="d-block text-body-secondary">Stuffed lamb stomach.</small></span><em aria-label="Ask for today’s price"></em></li>
+<a class="btn btn-outline-dark mt-3" href="#meal-planner">Plan a meal</a>
+</div></article></div>
+<div class="col-12 col-md-6 col-lg-4"><article class="card h-100" id="category-hot-dishes"><div class="card-body">
+<p class="small text-brand-accent fw-bold">03</p>
+<h3 class="h4">Hot dishes</h3>
+<ul class="list-unstyled mb-0">
+<li class="d-flex flex-wrap justify-content-between gap-2 border-top py-3" id="dish-chicken-quesadilla" data-price="3000">
+<span>Chicken quesadilla</span><strong class="text-nowrap">3,000 ₸</strong>
+</li>
+<li class="d-flex flex-wrap justify-content-between gap-2 border-top py-3" id="dish-meat-quesadilla" data-price="3200">
+<span>Meat quesadilla</span><strong class="text-nowrap">3,200 ₸</strong>
+</li>
+<li class="d-flex flex-wrap justify-content-between gap-2 border-top py-3" id="dish-mixed-quesadilla" data-price="3500">
+<span>Mixed quesadilla</span><strong class="text-nowrap">3,500 ₸</strong>
+</li>
 </ul>
-</div>
-</article></div>
-<div class="col-12 col-md-6 col-lg-4"><article class="card h-100 shadow-sm">
-<p class="menu-group-number card-header small fw-bold text-brand-accent">04</p>
-<div class="card-body">
-<h3 class="h4 mb-3 card-title">Desserts</h3>
-<ul class="dish-list list-unstyled mb-0">
-<li class="border-top py-2"><span><strong>Künefe</strong><small class="d-block text-body-secondary">Crisp pastry, cheese and syrup.</small></span><em aria-label="Ask for today’s price"></em></li>
-<li class="border-top py-2"><span><strong>Turkish sweets</strong><small class="d-block text-body-secondary">A changing selection.</small></span><em aria-label="Ask for today’s price"></em></li>
+<a class="btn btn-outline-dark mt-3" href="#meal-planner">Plan a meal</a>
+</div></article></div>
+<div class="col-12 col-md-6 col-lg-4"><article class="card h-100" id="category-pizza"><div class="card-body">
+<p class="small text-brand-accent fw-bold">04</p>
+<h3 class="h4">Pizza · 35 cm</h3>
+<ul class="list-unstyled mb-0">
+<li class="d-flex flex-wrap justify-content-between gap-2 border-top py-3" id="dish-margherita" data-price="3000">
+<span>Margherita</span><strong class="text-nowrap">3,000 ₸</strong>
+</li>
+<li class="d-flex flex-wrap justify-content-between gap-2 border-top py-3" id="dish-pepperoni" data-price="3500">
+<span>Pepperoni</span><strong class="text-nowrap">3,500 ₸</strong>
+</li>
+<li class="d-flex flex-wrap justify-content-between gap-2 border-top py-3" id="dish-four-seasons" data-price="3750">
+<span>Four Seasons</span><strong class="text-nowrap">3,750 ₸</strong>
+</li>
 </ul>
-</div>
-</article></div>
-<div class="col-12 col-md-6 col-lg-4"><article class="card h-100 shadow-sm">
-<p class="menu-group-number card-header small fw-bold text-brand-accent">05</p>
-<div class="card-body">
-<h3 class="h4 mb-3 card-title">Drinks</h3>
-<ul class="dish-list list-unstyled mb-0">
-<li class="border-top py-2"><span><strong>Turkish tea</strong><small class="d-block text-body-secondary">Hot tea in a small glass.</small></span><em aria-label="Ask for today’s price"></em></li>
-<li class="border-top py-2"><span><strong>Turkish coffee</strong><small class="d-block text-body-secondary">Strong, unfiltered coffee.</small></span><em aria-label="Ask for today’s price"></em></li>
-<li class="border-top py-2"><span><strong>Ayran</strong><small class="d-block text-body-secondary">A cold salted yoghurt drink.</small></span><em aria-label="Ask for today’s price"></em></li>
+<a class="btn btn-outline-dark mt-3" href="#meal-planner">Plan a meal</a>
+</div></article></div>
+<div class="col-12 col-md-6 col-lg-4"><article class="card h-100" id="category-salads"><div class="card-body">
+<p class="small text-brand-accent fw-bold">05</p>
+<h3 class="h4">Salads</h3>
+<ul class="list-unstyled mb-0">
+<li class="d-flex flex-wrap justify-content-between gap-2 border-top py-3" id="dish-achuchuk" data-price="1500">
+<span>Achuchuk salad</span><strong class="text-nowrap">1,500 ₸</strong>
+</li>
+<li class="d-flex flex-wrap justify-content-between gap-2 border-top py-3" id="dish-greek-salad" data-price="2700">
+<span>Greek salad</span><strong class="text-nowrap">2,700 ₸</strong>
+</li>
+<li class="d-flex flex-wrap justify-content-between gap-2 border-top py-3" id="dish-chicken-caesar" data-price="2700">
+<span>Chicken Caesar</span><strong class="text-nowrap">2,700 ₸</strong>
+</li>
 </ul>
+<a class="btn btn-outline-dark mt-3" href="#meal-planner">Plan a meal</a>
+</div></article></div>
+<div class="col-12 col-md-6 col-lg-4"><article class="card h-100" id="category-soups"><div class="card-body">
+<p class="small text-brand-accent fw-bold">06</p>
+<h3 class="h4">Soups</h3>
+<ul class="list-unstyled mb-0">
+<li class="d-flex flex-wrap justify-content-between gap-2 border-top py-3" id="dish-lentil-soup" data-price="1500">
+<span>Lentil soup</span><strong class="text-nowrap">1,500 ₸</strong>
+</li>
+<li class="d-flex flex-wrap justify-content-between gap-2 border-top py-3" id="dish-chicken-soup" data-price="1900">
+<span>Chicken soup</span><strong class="text-nowrap">1,900 ₸</strong>
+</li>
+<li class="d-flex flex-wrap justify-content-between gap-2 border-top py-3" id="dish-ishkembe" data-price="2200">
+<span>İşkembe soup</span><strong class="text-nowrap">2,200 ₸</strong>
+</li>
+</ul>
+<a class="btn btn-outline-dark mt-3" href="#meal-planner">Plan a meal</a>
+</div></article></div>
 </div>
-</article></div>
-<div class="col-12 col-md-6 col-lg-4"><article class="card h-100 shadow-sm">
-<img alt="Dining table inside Istanbul Restaurant" class="img-fluid card-img-top" src="images/restaurant-interior-table.jpg"/>
-<div class="card-body">
-<p class="small fw-bold text-uppercase text-brand-accent mb-3">Published menu item</p>
-<h3 class="h4 mb-3">Shrimp in tomato sauce</h3>
-<strong class="d-block h4 text-brand-accent">5,000 ₸</strong>
-<p>Listed as shrimp served in tomato sauce on ceramic. Confirm availability before ordering.</p>
+<div id="generated-menu-items" class="row g-4" aria-live="polite"></div>
+<p class="mt-4 mb-0"><a href="https://tr.restaurantguru.com/Istanbul-Restoran-Astana/menu" target="_blank" rel="noopener noreferrer">Published menu and prices</a> · <a href="https://2gis.kz/astana/firm/70000001069922617/tab/menu" target="_blank" rel="noopener noreferrer">Restaurant menu on 2GIS</a></p>
+</div></section>
+<section class="py-5 bg-body-tertiary" id="meal-planner" aria-labelledby="meal-planner-title"><div class="container"><div class="row g-4 align-items-start">
+<div class="col-12 col-lg-5">
+<p class="small fw-bold text-uppercase text-brand-accent">Your meal</p>
+<h2 class="display-5 mb-4" id="meal-planner-title">Plan what to try</h2>
+<p>Compare the dishes above, then choose a dish and the number of portions for your visit.</p>
+<p>For allergies, substitutions or a takeaway order, speak directly to the restaurant.</p>
+<a href="faq.html#question-form" class="btn btn-outline-dark">Prepare a food question</a>
 </div>
-</article></div>
-</div></div>
-<div class="menu-index container mt-5 table-responsive">
-<table class="table table-striped table-hover">
-<caption class="caption-top">Menu category index</caption>
-<thead>
-<tr><th scope="col">Category</th><th scope="col">Highlights</th></tr>
-</thead>
-<tbody>
-<tr><th scope="row">Breakfast</th><td>Breakfast, menemen, gözleme</td></tr>
-<tr><th scope="row">Grill</th><td>Döner, kebab, shashlik</td></tr>
-<tr><th scope="row">Street food</th><td>Balık ekmek, kokoreç, şırdan</td></tr>
-<tr><th scope="row">Dessert and drinks</th><td>Künefe, sweets, tea, coffee, ayran</td></tr>
-</tbody>
-</table>
+<form id="menu-meal-form" class="col-12 col-lg-7 bg-body p-4 border-top border-warning border-4" action="menu.html#menu-plan-result" method="get" aria-describedby="menu-form-help">
+<p id="menu-form-help">Check your dish and number of portions before planning your visit. This does not send an order or save your choices. Use the listed prices to estimate your food budget.</p>
+<div id="menu-errors" class="is-hidden is-error p-3 mb-3" role="alert" tabindex="-1"></div>
+<div class="row g-3">
+<div class="col-12">
+<label for="menu-dish" class="form-label">Dish</label><select id="menu-dish" name="dish" class="form-select" required aria-describedby="menu-dish-error"><option value="">Choose a dish</option>
+<optgroup label="Breakfast">
+<option value="menemen" data-price="1900">Turkish menemen — 1,900 ₸</option>
+<option value="gozleme" data-price="2400">Gözleme — 2,400 ₸</option>
+<option value="cheese-toast" data-price="1500">Cheese toast — 1,500 ₸</option>
+</optgroup>
+<optgroup label="Döner">
+<option value="chicken-doner" data-price="2900">Chicken döner on a plate — 2,900 ₸</option>
+<option value="beef-wrap" data-price="2700">Beef döner in lavash — 2,700 ₸</option>
+<option value="chicken-iskender" data-price="3100">Chicken Iskender kebab — 3,100 ₸</option>
+</optgroup>
+<optgroup label="Hot dishes">
+<option value="chicken-quesadilla" data-price="3000">Chicken quesadilla — 3,000 ₸</option>
+<option value="meat-quesadilla" data-price="3200">Meat quesadilla — 3,200 ₸</option>
+<option value="mixed-quesadilla" data-price="3500">Mixed quesadilla — 3,500 ₸</option>
+</optgroup>
+<optgroup label="Pizza · 35 cm">
+<option value="margherita" data-price="3000">Margherita — 3,000 ₸</option>
+<option value="pepperoni" data-price="3500">Pepperoni — 3,500 ₸</option>
+<option value="four-seasons" data-price="3750">Four Seasons — 3,750 ₸</option>
+</optgroup>
+<optgroup label="Salads">
+<option value="achuchuk" data-price="1500">Achuchuk salad — 1,500 ₸</option>
+<option value="greek-salad" data-price="2700">Greek salad — 2,700 ₸</option>
+<option value="chicken-caesar" data-price="2700">Chicken Caesar — 2,700 ₸</option>
+</optgroup>
+<optgroup label="Soups">
+<option value="lentil-soup" data-price="1500">Lentil soup — 1,500 ₸</option>
+<option value="chicken-soup" data-price="1900">Chicken soup — 1,900 ₸</option>
+<option value="ishkembe" data-price="2200">İşkembe soup — 2,200 ₸</option>
+</optgroup></select><span id="menu-dish-error" class="field-error is-hidden"></span>
 </div>
-</section>
-<section aria-labelledby="notes-title" class="py-5 bg-dark text-white" id="dish-question">
+<div class="col-12 col-md-6">
+<label for="menu-quantity" class="form-label">Portions</label><input class="form-control" id="menu-quantity" name="quantity" type="number" min="1" max="20" value="1" required aria-describedby="menu-quantity-error"><span id="menu-quantity-error" class="field-error is-hidden"></span>
+</div>
+<div class="col-12 col-md-6">
+<label for="menu-total" class="form-label">Estimated food subtotal</label><output id="menu-total" for="menu-dish menu-quantity" class="d-block border rounded p-2" aria-live="polite">No estimate yet</output><small class="text-body-secondary">Food only; confirm any extras or service charge.</small>
+</div>
+</div>
+<p class="d-flex flex-wrap gap-2 mt-4"><button id="menu-submit" class="btn btn-warning" type="submit">Check meal choices</button><button id="menu-reset" class="btn btn-outline-dark" type="reset">Reset fields</button></p>
+<section id="menu-plan-result" class="result-panel border rounded p-3 mt-4" aria-labelledby="menu-result-title" tabindex="-1">
+<h3 id="menu-result-title" class="h5">Your result</h3>
+<p class="result-idle mb-0">Your check result will appear here after you complete the form.</p>
+<div class="form-result is-success p-3" role="status">
+<strong>Meal choices checked</strong><p class="mt-2">Your selection passes the required-field checks. No order has been placed or saved. Continue to Visit to plan a date and group size.</p>
+<div id="menu-summary"></div>
+<div id="menu-confirmation" aria-live="polite"></div>
+<p class="d-flex flex-wrap gap-2"><a class="btn btn-warning" href="visit.html#plan-visit">Plan your visit</a><a class="btn btn-outline-dark" href="menu.html#menu-meal-form">Start again</a></p>
+</div></section>
+</form>
+</div></div></section><section aria-labelledby="notes-title" class="py-5 bg-dark text-white" id="dish-question">
 <div class="container"><div class="row g-4 align-items-start">
-<article class="col-12 col-lg-7">
+<div class="col-12 col-lg-7">
 <p class="small fw-bold text-uppercase text-brand-accent mb-3">Ordering notes</p>
 <h2 class="display-5 mb-4" id="notes-title">Before you choose</h2>
 <ol start="1">
-<li>Pick a menu group.</li>
-<li>Ask what is available today.</li>
-<li>Confirm the current price and ingredients.</li>
+<li>Compare the published dishes and prices.</li>
+<li>Choose a dish and portions in the meal planner.</li>
+<li>Plan your visit, then confirm availability and ingredients with the restaurant.</li>
 </ol>
-<ul>
-<li>Popular pairings<ul><li>Döner and ayran</li><li>Künefe and tea</li></ul></li>
-</ul>
 <blockquote>
 <p><q>Large portions and very tasty dishes.</q></p>
 <footer>— Dasha Agafonova, <cite>2GIS review</cite></footer>
 </blockquote>
-</article>
+</div>
 <aside class="col-12 col-lg-5 bg-body text-dark p-4 border-start border-warning border-4 shadow-sm">
 <h3 class="h4 mb-3">Ask before ordering</h3>
 <p>
@@ -169,19 +245,25 @@
 </section>
 </main>
 <footer class="site-footer bg-dark text-white">
-<div class="footer-inner container py-4"><div class="row g-4 align-items-center">
-<div class="footer-brand col-12 col-md-6 d-flex align-items-center gap-3">
-<img alt="" class="footer-logo" src="images/istanbul-logo.jpg"/>
-<small>Istanbul · Uly Dala 56<br/><a class="link-light" href="tel:+77021006288">+7 702 100 62 88</a><br/>© 2026 Sanzhar, Jasulan and Madi</small>
-</div>
-<ul class="footer-links col-12 col-md-6 d-flex flex-wrap justify-content-md-end gap-3 list-unstyled mb-0">
+  <div class="container py-4"><div class="row g-4 align-items-center">
+    <div class="col-12 col-lg-5 d-flex align-items-center gap-3">
+      <img alt="" class="footer-logo" src="images/istanbul-logo.jpg">
+      <small>Istanbul · Uly Dala 56<br><a class="link-light" href="tel:+77021006288">+7 702 100 62 88</a><br>© 2026 Sanzhar, Jasulan and Madi</small>
+    </div>
+    <nav class="col-12 col-lg-7" aria-label="Footer navigation">
+      <ul class="d-flex flex-wrap justify-content-lg-end gap-3 list-unstyled mb-0">
 <li><a class="link-light" href="index.html">Home</a></li>
+<li><a class="link-light" href="menu.html">Menu</a></li>
 <li><a class="link-light" href="visit.html">Visit</a></li>
+<li><a class="link-light" href="gallery.html">Gallery</a></li>
+<li><a class="link-light" href="about.html">About</a></li>
 <li><a class="link-light" href="faq.html">FAQ</a></li>
 <li><a class="link-light" href="feedback.html">Feedback</a></li>
-<li class="d-none"><a class="link-light" href="colophon.html">Colophon</a></li>
+<li><a class="link-light" href="colophon.html">Colophon</a></li>
 </ul>
-</div></div>
+    </nav>
+  </div></div>
 </footer>
-<script crossorigin="anonymous" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script></body>
+<script crossorigin="anonymous" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" src="vendor/bootstrap/bootstrap.bundle.min.js"></script>
+</body>
 </html>

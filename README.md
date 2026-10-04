@@ -68,7 +68,7 @@ Ids use English lowercase kebab-case. Shared states are `.is-hidden`, `.is-activ
 - Bootstrap **5.3.8**, locally pinned in `vendor/bootstrap/`; original CSS and bundle SRI hashes verified. Bootstrap supplies responsive grid, utilities, controls and mobile menu behavior.
 - `css/base.css`: a small shared correction layer for palette, fonts, images, focus, sticky header and prepared states.
 - Existing local JPG photographs in `images/`; no new stock or generated images.
-- No build step or custom runtime scripts. Files under `tools/` are developer checks and never loaded by a page.
+- No build step or custom runtime scripts.
 
 Open `index.html` directly, or start a local server from this directory:
 
@@ -77,32 +77,6 @@ python -m http.server 4173 --bind 127.0.0.1
 ```
 
 Then visit `http://127.0.0.1:4173/index.html`. Bootstrap assets and images load locally.
-
-## Checks and evidence
-
-- [Quality pass and remaining team work](docs/quality-pass.md)
-- [Content sources and limitations](docs/content-sources.md)
-- [Phone/desktop screenshots](docs/screenshots/README.md)
-- [Browser evidence](docs/checks/browser.json)
-- [Official Nu validation evidence](docs/checks/w3c.json)
-
-Repeat the source audit with Python and the already available `lxml` package:
-
-```powershell
-python tools/check_site.py
-```
-
-Use the official [Nu Html Checker release](https://github.com/validator/validator/releases/tag/latest) and Java 17+ to validate locally, without uploading HTML:
-
-```powershell
-python tools/check_w3c.py C:\path\to\vnu.jar
-```
-
-Browser checks use an already installed Playwright module and Chrome. Point `SITE_PLAYWRIGHT_MODULE` to the installed module if it is outside Node's search path, and `SITE_CHROME` to Chrome if needed. With the server running:
-
-```powershell
-node tools/check_browser.cjs
-```
 
 ## Submission and structure freeze
 

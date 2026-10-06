@@ -60,13 +60,13 @@ Future JavaScript will calculate the subtotal, populate the prepared summary/err
 | Generated content | `generated-gallery-items`, `gallery-empty`, `guest-reviews`, `generated-reviews` |
 | Every form | `<page>-submit`, `<page>-reset`, `<page>-errors`, `<page>-summary`, `<page>-confirmation`, per-field `<input-id>-error` containers |
 
-Ids use English lowercase kebab-case. Shared states are `.is-hidden`, `.is-active`, `.is-selected`, `.is-error`, `.is-success`, `.field-error` and the result-panel states. Error containers have `role="alert"`; results have `role="status"`; generated confirmations have `aria-live="polite"`. Inputs have real labels. The existing local `.faq-stepss` styling and sticky header are retained.
+Ids use English lowercase kebab-case. State styling uses Bootstrap: `.d-none` for hidden content, `.active` for navigation, `.border-warning` and `.border-2` for selection, `.is-invalid`/`.invalid-feedback` and `.is-valid` for fields, and `.alert-danger`/`.alert-success` for messages. Error containers have `role="alert"`; results have `role="status"`; generated confirmations have `aria-live="polite"`. Inputs have real labels. FAQ cards and the sticky header use Bootstrap utilities; CSS `:target` still reveals form results.
 
 ## Stack and opening the site
 
 - Semantic HTML5 and native browser validation.
 - Bootstrap **5.3.8**, locally pinned in `vendor/bootstrap/`; original CSS and bundle SRI hashes verified. Bootstrap supplies responsive grid, utilities, controls and mobile menu behavior.
-- `css/base.css`: a small shared correction layer for palette, fonts, images, focus, sticky header and prepared states.
+- `css/base.css`: a small shared layer for palette, fonts, logo dimensions, photo contrast, keyboard focus, anchor offsets and CSS-only form results. Layout, spacing, alerts and validation states use Bootstrap.
 - Existing local JPG photographs in `images/`; no new stock or generated images.
 - No build step or custom runtime scripts.
 

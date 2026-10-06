@@ -12,20 +12,20 @@
 </head>
 <body class="faq-page">
 <!-- Author: Madi. -->
-<a class="skip-link" href="#main-content">Skip to content</a>
-<header class="site-header bg-body border-bottom">
+<a class="skip-link visually-hidden-focusable position-fixed top-0 start-0 m-3 btn btn-warning" href="#main-content">Skip to content</a>
+<header class="site-header sticky-top bg-body border-bottom">
 <div class="container">
 <nav aria-label="Main navigation" class="navbar navbar-expand-lg w-100" data-bs-theme="light"><a aria-label="Istanbul Restaurant home" class="navbar-brand me-auto" href="index.html">
-<img alt="Istanbul Turkish Taste logo" class="brand-logo" src="images/istanbul-logo.jpg">
+<img alt="Istanbul Turkish Taste logo" class="brand-logo object-fit-contain" src="images/istanbul-logo.jpg">
 </a><button aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#main-navbar" data-bs-toggle="collapse" type="button" id="navigation-toggle"><span class="navbar-toggler-icon"></span></button>
 <div class="collapse navbar-collapse justify-content-lg-end" id="main-navbar"><ul class="navbar-nav gap-lg-2 mb-2 mb-lg-0" id="navigation-links">
-<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-<li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
-<li class="nav-item"><a class="nav-link" href="visit.html">Visit</a></li>
-<li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
-<li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-<li class="nav-item"><a aria-current="page" class="nav-link active" href="faq.html">FAQ</a></li>
-<li class="nav-item"><a class="nav-link" href="feedback.html">Feedback</a></li>
+<li class="nav-item"><a class="nav-link py-2" href="index.html">Home</a></li>
+<li class="nav-item"><a class="nav-link py-2" href="menu.html">Menu</a></li>
+<li class="nav-item"><a class="nav-link py-2" href="visit.html">Visit</a></li>
+<li class="nav-item"><a class="nav-link py-2" href="gallery.html">Gallery</a></li>
+<li class="nav-item"><a class="nav-link py-2" href="about.html">About</a></li>
+<li class="nav-item"><a aria-current="page" class="nav-link py-2 active text-decoration-underline link-underline-warning link-offset-3" href="faq.html">FAQ</a></li>
+<li class="nav-item"><a class="nav-link py-2" href="feedback.html">Feedback</a></li>
 </ul></div>
 </nav>
 </div>
@@ -76,16 +76,16 @@
 </div>
 <div id="generated-faq-items" aria-live="polite"></div>
 <p class="mt-4"><a class="btn btn-warning" href="#question-form">Prepare a question</a></p>
-<ol class="faq-steps" start="1">
-<li class="faq-stepss">
+<ol class="faq-steps list-unstyled d-grid gap-3 mt-4" start="1">
+<li class="border rounded p-4 m-0">
               Check the relevant page first:
               <ul>
 <li>Menu for food categories;</li>
 <li>Visit for hours, contact details and directions.</li>
 </ul>
 </li>
-<li class="faq-stepss">Write one specific question.</li>
-<li class="faq-stepss">Call the restaurant when an immediate answer is important.</li>
+<li class="border rounded p-4 m-0">Write one specific question.</li>
+<li class="border rounded p-4 m-0">Call the restaurant when an immediate answer is important.</li>
 </ol>
 <blockquote>
 <p><q>Everything was tasty and arrived on time.</q></p>
@@ -107,32 +107,32 @@
 </div>
 <form action="faq.html#question-result" class="col-12 col-lg-7 bg-body text-dark p-4 border-top border-warning border-4 shadow-sm" method="get" id="faq-question-form" aria-describedby="faq-form-help">
 <p id="faq-form-help">Complete the required fields and choose Check question. The browser checks your entries, then shows the result below. Entries are not sent to the restaurant or saved; this page cannot make a reservation or publish a review.</p>
-<div id="faq-errors" class="is-hidden is-error p-3 mb-3" role="alert" tabindex="-1"></div>
+<div id="faq-errors" class="d-none alert alert-danger p-3 mb-3" role="alert" tabindex="-1"></div>
 <div class="form-grid row g-3">
 <div class="col-12 col-md-6">
 <label class="form-label" for="faq-name">Name</label>
 <input class="form-control" id="faq-name" name="name" placeholder="Your name" required="" type="text" autocomplete="name" aria-describedby="faq-name-error">
-<span id="faq-name-error" class="field-error is-hidden"></span>
+<span id="faq-name-error" class="invalid-feedback d-none"></span>
 </div>
 <div class="col-12 col-md-6">
 <label class="form-label" for="faq-email">Email</label>
 <input class="form-control" id="faq-email" name="email" placeholder="name@example.com" required="" type="email" autocomplete="email" aria-describedby="faq-email-error">
-<span id="faq-email-error" class="field-error is-hidden"></span>
+<span id="faq-email-error" class="invalid-feedback d-none"></span>
 </div>
 <div class="col-12 col-md-6">
 <label class="form-label" for="faq-phone">Phone</label>
 <input class="form-control" id="faq-phone" name="phone" placeholder="+7 700 000 00 00" required="" type="tel" autocomplete="tel" aria-describedby="faq-phone-error">
-<span id="faq-phone-error" class="field-error is-hidden"></span>
+<span id="faq-phone-error" class="invalid-feedback d-none"></span>
 </div>
 <div class="col-12 col-md-6">
 <label class="form-label" for="faq-guests">Group size</label>
 <input class="form-control" id="faq-guests" max="60" min="1" name="guests" placeholder="2" required="" type="number" aria-describedby="faq-guests-error">
-<span id="faq-guests-error" class="field-error is-hidden"></span>
+<span id="faq-guests-error" class="invalid-feedback d-none"></span>
 </div>
 <div class="col-12 col-md-6">
 <label class="form-label" for="faq-date">Possible date</label>
 <input class="form-control" id="faq-date" name="date" required="" type="date" aria-describedby="faq-date-error">
-<span id="faq-date-error" class="field-error is-hidden"></span>
+<span id="faq-date-error" class="invalid-feedback d-none"></span>
 </div>
 <div class="col-12 col-md-6">
 <label class="form-label" for="faq-topic">Topic</label>
@@ -143,7 +143,7 @@
 <option>Group visit</option>
 <option>Accessibility</option>
 </select>
-<span id="faq-topic-error" class="field-error is-hidden"></span>
+<span id="faq-topic-error" class="invalid-feedback d-none"></span>
 </div>
 <fieldset class="col-12">
 <legend>Preferred reply</legend>
@@ -157,7 +157,7 @@
 <div class="col-12">
 <label class="form-label" for="faq-message">Question</label>
 <textarea class="form-control" id="faq-message" name="message" placeholder="Write one clear question" required="" maxlength="1500" rows="5" aria-describedby="faq-message-error"></textarea>
-<span id="faq-message-error" class="field-error is-hidden"></span>
+<span id="faq-message-error" class="invalid-feedback d-none"></span>
 </div>
 <label class="col-12 d-flex align-items-center gap-2" for="faq-confirm">
 <input class="form-check-input" id="faq-confirm" required="" type="checkbox" name="acknowledged" value="yes"> I understand that these details are not sent or saved.</label>
@@ -169,7 +169,7 @@
 <section id="question-result" class="result-panel border rounded p-3 mt-4" aria-labelledby="faq-result-title" tabindex="-1">
 <h3 id="faq-result-title" class="h5">Your result</h3>
 <p class="result-idle mb-0">Your check result will appear here after you complete the form.</p>
-<div class="form-result is-success p-3" role="status">
+<div class="form-result alert alert-success p-3" role="status">
 <strong>Question checked</strong><p class="mt-2">Your question passes the required-field checks. It has not been sent or saved. Keep a copy if you want to contact the restaurant.</p>
 <div id="faq-summary"></div>
 <div id="faq-confirmation" aria-live="polite"></div>
@@ -180,10 +180,10 @@
 </div></div>
 </section>
 </main>
-<footer class="site-footer bg-dark text-white">
+<footer class="site-footer text-break bg-dark text-white">
   <div class="container py-4"><div class="row g-4 align-items-center">
     <div class="col-12 col-lg-5 d-flex align-items-center gap-3">
-      <img alt="" class="footer-logo" src="images/istanbul-logo.jpg">
+      <img alt="" class="object-fit-contain flex-shrink-0" width="80" height="80" src="images/istanbul-logo.jpg">
       <small>Istanbul · Uly Dala 56<br><a class="link-light" href="tel:+77021006288">+7 702 100 62 88</a><br>© 2026 Sanzhar, Jasulan and Madi</small>
     </div>
     <nav class="col-12 col-lg-7" aria-label="Footer navigation">

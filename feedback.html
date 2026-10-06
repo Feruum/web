@@ -12,20 +12,20 @@
 </head>
 <body class="feedback-page">
 <!-- Author: Sanzhar. -->
-<a class="skip-link" href="#main-content">Skip to content</a>
-<header class="site-header bg-body border-bottom">
+<a class="skip-link visually-hidden-focusable position-fixed top-0 start-0 m-3 btn btn-warning" href="#main-content">Skip to content</a>
+<header class="site-header sticky-top bg-body border-bottom">
 <div class="container">
 <nav aria-label="Main navigation" class="navbar navbar-expand-lg w-100" data-bs-theme="light"><a aria-label="Istanbul Restaurant home" class="navbar-brand me-auto" href="index.html">
-<img alt="Istanbul Turkish Taste logo" class="brand-logo" src="images/istanbul-logo.jpg">
+<img alt="Istanbul Turkish Taste logo" class="brand-logo object-fit-contain" src="images/istanbul-logo.jpg">
 </a><button aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#main-navbar" data-bs-toggle="collapse" type="button" id="navigation-toggle"><span class="navbar-toggler-icon"></span></button>
 <div class="collapse navbar-collapse justify-content-lg-end" id="main-navbar"><ul class="navbar-nav gap-lg-2 mb-2 mb-lg-0" id="navigation-links">
-<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-<li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
-<li class="nav-item"><a class="nav-link" href="visit.html">Visit</a></li>
-<li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
-<li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-<li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
-<li class="nav-item"><a aria-current="page" class="nav-link active" href="feedback.html">Feedback</a></li>
+<li class="nav-item"><a class="nav-link py-2" href="index.html">Home</a></li>
+<li class="nav-item"><a class="nav-link py-2" href="menu.html">Menu</a></li>
+<li class="nav-item"><a class="nav-link py-2" href="visit.html">Visit</a></li>
+<li class="nav-item"><a class="nav-link py-2" href="gallery.html">Gallery</a></li>
+<li class="nav-item"><a class="nav-link py-2" href="about.html">About</a></li>
+<li class="nav-item"><a class="nav-link py-2" href="faq.html">FAQ</a></li>
+<li class="nav-item"><a aria-current="page" class="nav-link py-2 active text-decoration-underline link-underline-warning link-offset-3" href="feedback.html">Feedback</a></li>
 </ul></div>
 </nav>
 </div>
@@ -83,34 +83,34 @@
 </div>
 <form action="feedback.html#feedback-result" class="col-12 col-lg-7 bg-body text-dark p-4 border-top border-warning border-4 shadow-sm" method="get" id="feedback-review-form" aria-describedby="feedback-form-help">
 <p id="feedback-form-help">Complete the required fields and choose Check review. The browser checks your entries, then shows the result below. Entries are not sent to the restaurant or saved; this page cannot make a reservation or publish a review.</p>
-<div id="feedback-errors" class="is-hidden is-error p-3 mb-3" role="alert" tabindex="-1"></div>
+<div id="feedback-errors" class="d-none alert alert-danger p-3 mb-3" role="alert" tabindex="-1"></div>
 <fieldset>
 <legend>Visit details</legend>
 <div class="form-grid row g-3">
 <div class="col-12 col-md-6">
 <label class="form-label" for="feedback-name">Name</label>
 <input class="form-control" id="feedback-name" name="name" placeholder="Your name" required="" type="text" autocomplete="name" aria-describedby="feedback-name-error">
-<span id="feedback-name-error" class="field-error is-hidden"></span>
+<span id="feedback-name-error" class="invalid-feedback d-none"></span>
 </div>
 <div class="col-12 col-md-6">
 <label class="form-label" for="feedback-email">Email</label>
 <input class="form-control" id="feedback-email" name="email" placeholder="name@example.com" required="" type="email" autocomplete="email" aria-describedby="feedback-email-error">
-<span id="feedback-email-error" class="field-error is-hidden"></span>
+<span id="feedback-email-error" class="invalid-feedback d-none"></span>
 </div>
 <div class="col-12 col-md-6">
 <label class="form-label" for="feedback-phone">Phone</label>
 <input class="form-control" id="feedback-phone" name="phone" placeholder="+7 700 000 00 00" required="" type="tel" autocomplete="tel" aria-describedby="feedback-phone-error">
-<span id="feedback-phone-error" class="field-error is-hidden"></span>
+<span id="feedback-phone-error" class="invalid-feedback d-none"></span>
 </div>
 <div class="col-12 col-md-6">
 <label class="form-label" for="feedback-guests">Guests</label>
 <input class="form-control" id="feedback-guests" max="60" min="1" name="guests" placeholder="2" required="" type="number" aria-describedby="feedback-guests-error">
-<span id="feedback-guests-error" class="field-error is-hidden"></span>
+<span id="feedback-guests-error" class="invalid-feedback d-none"></span>
 </div>
 <div class="col-12 col-md-6">
 <label class="form-label" for="feedback-date">Visit date</label>
 <input class="form-control" id="feedback-date" name="date" required="" type="date" aria-describedby="feedback-date-error">
-<span id="feedback-date-error" class="field-error is-hidden"></span>
+<span id="feedback-date-error" class="invalid-feedback d-none"></span>
 </div>
 <div class="col-12 col-md-6">
 <label class="form-label" for="feedback-topic">Main topic</label>
@@ -120,7 +120,7 @@
 <option>Service</option>
 <option>Atmosphere</option>
 </select>
-<span id="feedback-topic-error" class="field-error is-hidden"></span>
+<span id="feedback-topic-error" class="invalid-feedback d-none"></span>
 </div>
 <fieldset class="col-12">
 <legend>Would you return?</legend>
@@ -134,7 +134,7 @@
 <div class="col-12">
 <label class="form-label" for="feedback-message">Feedback</label>
 <textarea class="form-control" id="feedback-message" name="message" placeholder="Describe one specific experience" required="" maxlength="1500" rows="5" aria-describedby="feedback-message-error"></textarea>
-<span id="feedback-message-error" class="field-error is-hidden"></span>
+<span id="feedback-message-error" class="invalid-feedback d-none"></span>
 </div>
 <label class="col-12 d-flex align-items-center gap-2" for="feedback-confirm">
 <input class="form-check-input" id="feedback-confirm" required="" type="checkbox" name="acknowledged" value="yes"> I understand that these details are not sent or saved.</label>
@@ -147,7 +147,7 @@
 <section id="feedback-result" class="result-panel border rounded p-3 mt-4" aria-labelledby="feedback-result-title" tabindex="-1">
 <h3 id="feedback-result-title" class="h5">Your result</h3>
 <p class="result-idle mb-0">Your check result will appear here after you complete the form.</p>
-<div class="form-result is-success p-3" role="status">
+<div class="form-result alert alert-success p-3" role="status">
 <strong>Review checked</strong><p class="mt-2">Your review passes the required-field checks. It has not been published, sent or saved. Keep a copy if you want to post it on the restaurant listing.</p>
 <div id="feedback-summary"></div>
 <div id="feedback-confirmation" aria-live="polite"></div>
@@ -158,10 +158,10 @@
 </div></div>
 </section>
 </main>
-<footer class="site-footer bg-dark text-white">
+<footer class="site-footer text-break bg-dark text-white">
   <div class="container py-4"><div class="row g-4 align-items-center">
     <div class="col-12 col-lg-5 d-flex align-items-center gap-3">
-      <img alt="" class="footer-logo" src="images/istanbul-logo.jpg">
+      <img alt="" class="object-fit-contain flex-shrink-0" width="80" height="80" src="images/istanbul-logo.jpg">
       <small>Istanbul · Uly Dala 56<br><a class="link-light" href="tel:+77021006288">+7 702 100 62 88</a><br>© 2026 Sanzhar, Jasulan and Madi</small>
     </div>
     <nav class="col-12 col-lg-7" aria-label="Footer navigation">

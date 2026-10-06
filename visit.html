@@ -12,21 +12,21 @@
 </head>
 <body class="visit-page">
 <!-- Author: Jasulan. -->
-<a class="skip-link" href="#main-content">Skip to content</a>
-<header class="site-header bg-body border-bottom">
+<a class="skip-link visually-hidden-focusable position-fixed top-0 start-0 m-3 btn btn-warning" href="#main-content">Skip to content</a>
+<header class="site-header sticky-top bg-body border-bottom">
 <!-- This div keeps the logo and navigation in one layout row without changing their semantics. -->
 <div class="container">
 <nav aria-label="Main navigation" class="navbar navbar-expand-lg w-100" data-bs-theme="light"><a aria-label="Istanbul Restaurant home" class="navbar-brand me-auto" href="index.html">
-<img alt="Istanbul Turkish Taste logo" class="brand-logo" src="images/istanbul-logo.jpg">
+<img alt="Istanbul Turkish Taste logo" class="brand-logo object-fit-contain" src="images/istanbul-logo.jpg">
 </a><button aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#main-navbar" data-bs-toggle="collapse" type="button" id="navigation-toggle"><span class="navbar-toggler-icon"></span></button>
 <div class="collapse navbar-collapse justify-content-lg-end" id="main-navbar"><ul class="navbar-nav gap-lg-2 mb-2 mb-lg-0" id="navigation-links">
-<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-<li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
-<li class="nav-item"><a aria-current="page" class="nav-link active" href="visit.html">Visit</a></li>
-<li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
-<li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-<li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
-<li class="nav-item"><a class="nav-link" href="feedback.html">Feedback</a></li>
+<li class="nav-item"><a class="nav-link py-2" href="index.html">Home</a></li>
+<li class="nav-item"><a class="nav-link py-2" href="menu.html">Menu</a></li>
+<li class="nav-item"><a aria-current="page" class="nav-link py-2 active text-decoration-underline link-underline-warning link-offset-3" href="visit.html">Visit</a></li>
+<li class="nav-item"><a class="nav-link py-2" href="gallery.html">Gallery</a></li>
+<li class="nav-item"><a class="nav-link py-2" href="about.html">About</a></li>
+<li class="nav-item"><a class="nav-link py-2" href="faq.html">FAQ</a></li>
+<li class="nav-item"><a class="nav-link py-2" href="feedback.html">Feedback</a></li>
 </ul></div>
 </nav>
 </div>
@@ -58,7 +58,7 @@
 <div class="col-12 col-lg-6">
 <p class="small fw-bold text-uppercase text-brand-accent mb-3">Location</p>
 <h2 class="display-5 mb-4" id="location-title">Everything before you go</h2>
-<address>
+<address class="text-break">
 <strong>Uly Dala Avenue 56</strong><br>
               Esil district, Astana<br>
               Z10C8A8
@@ -122,27 +122,27 @@
 </div>
 <form action="visit.html#visit-form-result" class="col-12 col-lg-7 bg-body text-dark p-4 border-top border-warning border-4 shadow-sm" method="get" id="visit-plan-form" aria-describedby="visit-form-help">
 <p id="visit-form-help">Complete the required fields and choose Check visit details. The browser checks your entries, then shows the result below. Entries are not sent to the restaurant or saved; this page cannot make a reservation or publish a review.</p>
-<div id="visit-errors" class="is-hidden is-error p-3 mb-3" role="alert" tabindex="-1"></div>
+<div id="visit-errors" class="d-none alert alert-danger p-3 mb-3" role="alert" tabindex="-1"></div>
 <div class="form-grid row g-3">
 <div class="col-12 col-md-6">
 <label class="form-label" for="visit-name">Name</label>
 <input class="form-control" id="visit-name" name="name" placeholder="Your name" required="" type="text" autocomplete="name" aria-describedby="visit-name-error">
-<span id="visit-name-error" class="field-error is-hidden"></span>
+<span id="visit-name-error" class="invalid-feedback d-none"></span>
 </div>
 <div class="col-12 col-md-6">
 <label class="form-label" for="visit-email">Email</label>
 <input class="form-control" id="visit-email" name="email" placeholder="name@example.com" required="" type="email" autocomplete="email" aria-describedby="visit-email-error">
-<span id="visit-email-error" class="field-error is-hidden"></span>
+<span id="visit-email-error" class="invalid-feedback d-none"></span>
 </div>
 <div class="col-12 col-md-6">
 <label class="form-label" for="visit-phone">Phone</label>
 <input class="form-control" id="visit-phone" name="phone" placeholder="+7 700 000 00 00" required="" type="tel" autocomplete="tel" aria-describedby="visit-phone-error">
-<span id="visit-phone-error" class="field-error is-hidden"></span>
+<span id="visit-phone-error" class="invalid-feedback d-none"></span>
 </div>
 <div class="col-12 col-md-6">
 <label class="form-label" for="visit-date">Date</label>
 <input class="form-control" id="visit-date" name="date" required="" type="date" aria-describedby="visit-date-error">
-<span id="visit-date-error" class="field-error is-hidden"></span>
+<span id="visit-date-error" class="invalid-feedback d-none"></span>
 </div>
 <div class="col-12 col-md-6">
 <label class="form-label" for="visit-time">Time period</label>
@@ -153,12 +153,12 @@
 <option>Dinner</option>
 <option>Late evening</option>
 </select>
-<span id="visit-time-error" class="field-error is-hidden"></span>
+<span id="visit-time-error" class="invalid-feedback d-none"></span>
 </div>
 <div class="col-12 col-md-6">
 <label class="form-label" for="visit-guests">Guests</label>
 <input class="form-control" id="visit-guests" max="60" min="1" name="guests" placeholder="2" required="" type="number" value="2" aria-describedby="visit-guests-error">
-<span id="visit-guests-error" class="field-error is-hidden"></span>
+<span id="visit-guests-error" class="invalid-feedback d-none"></span>
 </div>
 <fieldset class="col-12 col-md-6">
 <legend>Visit format</legend>
@@ -172,7 +172,7 @@
 <div class="col-12">
 <label class="form-label" for="visit-note">Question or note</label>
 <textarea class="form-control" id="visit-note" name="note" placeholder="Add one short note" required="" maxlength="1500" rows="5" aria-describedby="visit-note-error"></textarea>
-<span id="visit-note-error" class="field-error is-hidden"></span>
+<span id="visit-note-error" class="invalid-feedback d-none"></span>
 </div>
 <label class="col-12 d-flex align-items-center gap-2" for="visit-confirm">
 <input class="form-check-input" id="visit-confirm" required="" type="checkbox" name="acknowledged" value="yes"> I understand that these details are not sent or saved.</label>
@@ -184,7 +184,7 @@
 <section id="visit-form-result" class="result-panel border rounded p-3 mt-4" aria-labelledby="visit-result-title" tabindex="-1">
 <h3 id="visit-result-title" class="h5">Your result</h3>
 <p class="result-idle mb-0">Your check result will appear here after you complete the form.</p>
-<div class="form-result is-success p-3" role="status">
+<div class="form-result alert alert-success p-3" role="status">
 <strong>Visit details checked</strong><p class="mt-2">Your visit details pass the required-field checks. No table has been reserved and the details are not saved. You can now use the address and hours to prepare your visit.</p>
 <div id="visit-summary"></div>
 <div id="visit-confirmation" aria-live="polite"></div>
@@ -196,10 +196,10 @@
 </div></div>
 </section>
 </main>
-<footer class="site-footer bg-dark text-white">
+<footer class="site-footer text-break bg-dark text-white">
   <div class="container py-4"><div class="row g-4 align-items-center">
     <div class="col-12 col-lg-5 d-flex align-items-center gap-3">
-      <img alt="" class="footer-logo" src="images/istanbul-logo.jpg">
+      <img alt="" class="object-fit-contain flex-shrink-0" width="80" height="80" src="images/istanbul-logo.jpg">
       <small>Istanbul · Uly Dala 56<br><a class="link-light" href="tel:+77021006288">+7 702 100 62 88</a><br>© 2026 Sanzhar, Jasulan and Madi</small>
     </div>
     <nav class="col-12 col-lg-7" aria-label="Footer navigation">

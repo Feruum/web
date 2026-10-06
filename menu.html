@@ -12,20 +12,20 @@
 </head>
 <body class="menu-page">
 <!-- Author: Sanzhar. -->
-<a class="skip-link" href="#main-content">Skip to content</a>
-<header class="site-header bg-body border-bottom">
+<a class="skip-link visually-hidden-focusable position-fixed top-0 start-0 m-3 btn btn-warning" href="#main-content">Skip to content</a>
+<header class="site-header sticky-top bg-body border-bottom">
 <div class="container">
 <nav aria-label="Main navigation" class="navbar navbar-expand-lg w-100" data-bs-theme="light"><a aria-label="Istanbul Restaurant home" class="navbar-brand me-auto" href="index.html">
-<img alt="Istanbul Turkish Taste logo" class="brand-logo" src="images/istanbul-logo.jpg">
+<img alt="Istanbul Turkish Taste logo" class="brand-logo object-fit-contain" src="images/istanbul-logo.jpg">
 </a><button aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#main-navbar" data-bs-toggle="collapse" type="button" id="navigation-toggle"><span class="navbar-toggler-icon"></span></button>
 <div class="collapse navbar-collapse justify-content-lg-end" id="main-navbar"><ul class="navbar-nav gap-lg-2 mb-2 mb-lg-0" id="navigation-links">
-<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-<li class="nav-item"><a aria-current="page" class="nav-link active" href="menu.html">Menu</a></li>
-<li class="nav-item"><a class="nav-link" href="visit.html">Visit</a></li>
-<li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
-<li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-<li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
-<li class="nav-item"><a class="nav-link" href="feedback.html">Feedback</a></li>
+<li class="nav-item"><a class="nav-link py-2" href="index.html">Home</a></li>
+<li class="nav-item"><a aria-current="page" class="nav-link py-2 active text-decoration-underline link-underline-warning link-offset-3" href="menu.html">Menu</a></li>
+<li class="nav-item"><a class="nav-link py-2" href="visit.html">Visit</a></li>
+<li class="nav-item"><a class="nav-link py-2" href="gallery.html">Gallery</a></li>
+<li class="nav-item"><a class="nav-link py-2" href="about.html">About</a></li>
+<li class="nav-item"><a class="nav-link py-2" href="faq.html">FAQ</a></li>
+<li class="nav-item"><a class="nav-link py-2" href="feedback.html">Feedback</a></li>
 </ul></div>
 </nav>
 </div>
@@ -164,7 +164,7 @@
 </div>
 <form id="menu-meal-form" class="col-12 col-lg-7 bg-body p-4 border-top border-warning border-4" action="menu.html#menu-plan-result" method="get" aria-describedby="menu-form-help">
 <p id="menu-form-help">Check your dish and number of portions before planning your visit. This does not send an order or save your choices. Use the listed prices to estimate your food budget.</p>
-<div id="menu-errors" class="is-hidden is-error p-3 mb-3" role="alert" tabindex="-1"></div>
+<div id="menu-errors" class="d-none alert alert-danger p-3 mb-3" role="alert" tabindex="-1"></div>
 <div class="row g-3">
 <div class="col-12">
 <label for="menu-dish" class="form-label">Dish</label><select id="menu-dish" name="dish" class="form-select" required aria-describedby="menu-dish-error"><option value="">Choose a dish</option>
@@ -197,10 +197,10 @@
 <option value="lentil-soup" data-price="1500">Lentil soup — 1,500 ₸</option>
 <option value="chicken-soup" data-price="1900">Chicken soup — 1,900 ₸</option>
 <option value="ishkembe" data-price="2200">İşkembe soup — 2,200 ₸</option>
-</optgroup></select><span id="menu-dish-error" class="field-error is-hidden"></span>
+</optgroup></select><span id="menu-dish-error" class="invalid-feedback d-none"></span>
 </div>
 <div class="col-12 col-md-6">
-<label for="menu-quantity" class="form-label">Portions</label><input class="form-control" id="menu-quantity" name="quantity" type="number" min="1" max="20" value="1" required aria-describedby="menu-quantity-error"><span id="menu-quantity-error" class="field-error is-hidden"></span>
+<label for="menu-quantity" class="form-label">Portions</label><input class="form-control" id="menu-quantity" name="quantity" type="number" min="1" max="20" value="1" required aria-describedby="menu-quantity-error"><span id="menu-quantity-error" class="invalid-feedback d-none"></span>
 </div>
 <div class="col-12 col-md-6">
 <label for="menu-total" class="form-label">Estimated food subtotal</label><output id="menu-total" for="menu-dish menu-quantity" class="d-block border rounded p-2" aria-live="polite">No estimate yet</output><small class="text-body-secondary">Food only; confirm any extras or service charge.</small>
@@ -210,7 +210,7 @@
 <section id="menu-plan-result" class="result-panel border rounded p-3 mt-4" aria-labelledby="menu-result-title" tabindex="-1">
 <h3 id="menu-result-title" class="h5">Your result</h3>
 <p class="result-idle mb-0">Your check result will appear here after you complete the form.</p>
-<div class="form-result is-success p-3" role="status">
+<div class="form-result alert alert-success p-3" role="status">
 <strong>Meal choices checked</strong><p class="mt-2">Your selection passes the required-field checks. No order has been placed or saved. Continue to Visit to plan a date and group size.</p>
 <div id="menu-summary"></div>
 <div id="menu-confirmation" aria-live="polite"></div>
@@ -244,10 +244,10 @@
 </div></div>
 </section>
 </main>
-<footer class="site-footer bg-dark text-white">
+<footer class="site-footer text-break bg-dark text-white">
   <div class="container py-4"><div class="row g-4 align-items-center">
     <div class="col-12 col-lg-5 d-flex align-items-center gap-3">
-      <img alt="" class="footer-logo" src="images/istanbul-logo.jpg">
+      <img alt="" class="object-fit-contain flex-shrink-0" width="80" height="80" src="images/istanbul-logo.jpg">
       <small>Istanbul · Uly Dala 56<br><a class="link-light" href="tel:+77021006288">+7 702 100 62 88</a><br>© 2026 Sanzhar, Jasulan and Madi</small>
     </div>
     <nav class="col-12 col-lg-7" aria-label="Footer navigation">

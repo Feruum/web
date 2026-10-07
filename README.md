@@ -78,6 +78,8 @@ python -m http.server 4173 --bind 127.0.0.1
 
 Then visit `http://127.0.0.1:4173/index.html`. Bootstrap assets and images load locally.
 
+Local Bootstrap links omit the CDN `crossorigin` and `integrity` attributes so the styles and mobile menu also work when opening `index.html` directly with `file://`. The original asset hashes remain documented in `vendor/bootstrap/README.md`.
+
 ## Submission and structure freeze
 
 The team must complete cross-review at least two days before the actual deadline, confirm content and photograph ownership, and commit from each member's own account on at least four different days. Technical checks do not replace team review. No deadline was supplied and the required histories have not been certified.
